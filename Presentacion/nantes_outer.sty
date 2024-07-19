@@ -1,0 +1,30 @@
+
+%\setbeamertemplate{background canvas}{
+%	\includegraphics[width=\paperwidth,height=\paperheight]{Nantes_img/fond_blanc.png}
+%} 
+\defbeamertemplate*{headline}{rennes theme}
+{
+  \leavevmode%
+  \hbox{%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,right]{section in head/foot}%
+    \usebeamerfont{section in head/foot}\insertsectionhead\hspace*{2ex}
+  \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.5\paperwidth,ht=2.25ex,dp=1ex,left]{subsection in head/foot}%
+    \usebeamerfont{subsection in head/foot}\hspace*{2ex}\insertsubsectionhead
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+\defbeamertemplate*{footline}{rennes theme}
+{
+  \leavevmode%
+  \hbox{%
+%  \begin{beamercolorbox}[wd=\paperwidth,ht=2.25ex,dp=1ex,right]{authors in head/foot}%
+  \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left]{authors in head/foot}%
+    \usebeamerfont{author in head/foot}\hspace*{1ex}~\textbf{\insertframenumber}~/ \textbf{\inserttotalframenumber}
+   \end{beamercolorbox}%
+  \begin{beamercolorbox}[wd=.75\paperwidth,ht=2.25ex,dp=1ex,right]{authors in head/foot}%
+    \usebeamerfont{author in head/foot}\textbf{\insertshortauthor}\hspace*{1ex}
+  \end{beamercolorbox}}%
+  \vskip0pt%
+}
+% \hspace*{2ex}(\insertframenumber~/ \inserttotalframenumber)

@@ -1,0 +1,569 @@
+\documentclass[10pt]{beamer}
+\usepackage[ruled,lined,linesnumbered]{algorithm2e}
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage[francais]{babel}
+\usepackage[francais]{layout}
+\usepackage[utf8x]{inputenc}
+\usepackage{nantes_theme}
+\usepackage{epsfig}
+\setbeamercolor{background canvas}{bg=white}
+\usepackage{marvosym}
+\usepackage{wasysym}
+
+% -- Colors used ---------------------------------------------------------
+\usepackage{fancybox}
+%\usepackage{slidesec}
+%\usepackage{latexsym}
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+% \usepackage{graphicx}
+% \usepackage{rotate}
+% \usepackage{lscape}
+% \usepackage{xspace}
+% \usepackage{float}
+% \usepackage{color}
+ 
+%\definecolor{vertfonce} {rgb}{0.03,0.345,0.427}
+%\definecolor{mauvefonce} {rgb}{0.5,0.0,0.5}
+%\definecolor{vertMIC} {rgb}{0.51,0.76,0.15}
+
+\newcommand{\BLEU}[1]{\textcolor{blue}{{\bf #1}}\xspace}
+%\newcommand{\PINK}[1]{\textcolor{magenta}{{\bf #1}}\xspace}
+%\newcommand{\ROUGE}[1]{\textcolor{red}{{\bf #1}}\xspace}
+%\newcommand{\FLUO}[1]{\colorbox{yellow}{#1}\xspace}
+%\newcommand{\CYAN}[1]{\colorbox{cyan}{#1}\xspace}
+%\newcommand{\MAUVEn}[1]{\textcolor{mauvefonce}{ #1}\xspace}
+%\newcommand{\VERTMIC}[1]{\textcolor{vertMIC}{{\bf #1}}\xspace}
+
+%%\definecolor{tbon} {rgb}{0.000,1.000,0.000}
+%\newrgbcolor{tbon} {0.000 1.000 0.000}
+%\newrgbcolor{abon} {0.500 0.900 0.000}
+%\newrgbcolor{bof} {0.900 0.600 0.000}
+%\newrgbcolor{tnul} {1.000 0.000 0.000}
+%
+%\newrgbcolor{lightblue} {0.000 0.000 0.500}
+%
+%\newcommand{\TBON}[1]{\colorbox{tbon}{#1}\xspace}
+%\newcommand{\ABON}[1]{\colorbox{abon}{#1}\xspace}
+%\newcommand{\BOF}[1]{\colorbox{bof}{#1}\xspace}
+%\newcommand{\TNUL}[1]{\colorbox{tnul}{#1}\xspace}
+
+\definecolor{VERTC} {rgb}{0.81,0.99,0.78}
+\definecolor{VERTM} {rgb}{0.41,0.99,0.41}
+\definecolor{VERTF} {rgb}{0.16,0.99,0.03}
+\newcommand{\BOXVERTC}[1]{\colorbox{VERTC}{#1}\xspace}
+\newcommand{\BOXVERTM}[1]{\colorbox{VERTM}{#1}\xspace}
+\newcommand{\BOXVERTF}[1]{\colorbox{VERTF}{#1}\xspace}
+
+\definecolor{ROUGEC} {rgb}{0.99,0.78,0.78}
+\definecolor{ROUGEM} {rgb}{0.99,0.41,0.41}
+\definecolor{ROUGEF} {rgb}{0.99,0.03,0.03}
+\newcommand{\BOXROUGEC}[1]{\colorbox{ROUGEC}{#1}\xspace}
+\newcommand{\BOXROUGEM}[1]{\colorbox{ROUGEM}{#1}\xspace}
+\newcommand{\BOXROUGEF}[1]{\colorbox{ROUGEF}{#1}\xspace}
+
+
+\title{Uso de un Algoritmo de C\'umulo de Part\'iculas \\ 
+       Basado en Hipervolumen para \\ Resolver Problemas Multi-Objetivo}
+%\subtitle{\subtitle}
+\author[MOPSOhv]{
+\vspace{2mm}\\{\textbf{Ing. Iv\'an Christhofer Chaman Garc\'ia}} \\
+Asesor:\\
+{\textbf{Dr. Carlos A. Coello Coello}}
+}
+\institute{
+\begin{center}
+\textbf{
+Centro de Investigaci\'on y de Estudios Avanzados \\
+del Instituto Polit\'ecnico Nacional \\
+Departamiento de Computaci\'on. \\}
+\end{center}
+}
+\date{\footnotesize{\vspace{2mm}\\
+5 de Octubre de 2012}}
+\beamertemplatetransparentcovered
+
+\setbeamercolor{frametitle}{bg=lightgray}
+
+\begin{document}
+
+%
+% ===========================
+%
+{ % Redefinition du bas du style afin de ne pas afficher le numero de slide sur la page 1
+  \defbeamertemplate*{footline}{}
+  {
+    \leavevmode%
+    \hbox{%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left]{authors in head/foot}%
+        \usebeamerfont{author in head/foot}\hspace*{1ex}
+     \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.75\paperwidth,ht=2.25ex,dp=1ex,right]{authors in head/foot}%
+        \usebeamerfont{author in head/foot}\insertshortauthor\hspace*{1ex}
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
+	\frame{\titlepage}
+}
+
+\section{Introducci\'on}
+\frame{\tableofcontents[currentsection]}
+\begin{frame}
+\frametitle{Motivaci\'on}
+	\begin{block}{Principales objetivos de este trabajo:}
+	\begin{itemize}
+	\item Implementar un algoritmo basado en c\'umulos de particulas para resolver problemas multi-objetivo.
+	\item Uso del hipervolumen para gu\'ia la b\'usqueda de soluciones.
+	\item Comparar el algoritmo con diferentes algoritimo y conjuntos de problemas de la literatura especializada.
+	\item Pruenas de escalabilidad.
+	\end{itemize}
+	\end{block}
+\end{frame}
+
+  \subsection{Optimizaci\'on Multi-objetivo}
+    \begin{frame}
+	\frametitle{Modelando un Problema de Optimizacion Multi-objetivo}
+	\[
+	\left[\begin{array}{ccc}
+	opt & f_i(\vec{x}) & \forall i \in \{1,...,m\} \\
+	con &  & \\
+	    & g_j(\vec{x}) \leq 0 & \forall j \in \{1,...,p\} \\
+	    & h_k(\vec{x}) = 0 & \forall k \in \{1,...,q\} \\
+	    & x_l \in [lb, ub] & \forall l \in \{1,...,r\} \\
+	\end{array}\right]
+	\]
+      \begin{block}{where:}
+	  \begin{itemize}
+		\item $opt \in \{min, max\}$,
+		\item $m$ es el n\'umero de funciones objetivo,
+		\item $p$ es el n\'umero de restricciones de desigualdad,
+		\item $q$ es el n\'umero de restricciones de igualdad,
+		\item $r$ es el n\'umero de variables de desici\'on del problema,
+		\item $lb, ub$ son los intervalos del problema (inferior y superior, respectivamente) de cada variable $x_l$.
+	  \end{itemize}
+	\end{block}
+	En adelante, asumimos que todos los objetivos son para minimizaci\'on.
+    \end{frame}
+  \subsection{Definiciones}
+\begin{frame}
+	\frametitle{Definiciones y Notaciones}
+	\begin{block}{Dominancia de Pareto}
+	Un vector $\vec{x}$ domina a otro vector $\vec{y}$ si solo si $f_i(\vec{x}) \leq f_i(\vec{y}) ~ \forall i \in \{1,...,m\}$ 
+	y existe al menos un $i$ tal que $f_i(\vec{x}) < f_i(\vec{y})$. We also say that $\vec{y}$ is dominated by $\vec{x}$. A binary operator ``$\prec$" is defined as:
+	$$
+	\vec{x} ~ \texttt{dominates} ~ \vec{y} \Longleftrightarrow \vec{x} \prec \vec{y}
+	$$
+	\end{block}
+	\begin{block}{conjunto optimo de Pareto \& frente de Pareto}
+	All the solutions whose vectors are not dominated by any other vector in $\mathbb{R}^m$ are said to be {\bf non-dominated}. 
+
+	The Pareto optimal set is composed of all vectors in the search space $\mathbb{R}^n$ that are non-dominated. 
+
+	The image of the Pareto optimal set (i.e., their objective function value) form the Pareto front.
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Ejemplo de un problema con dos objetivos}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{multiobj.eps}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Dominancia de Pareto}
+	\begin{figure}[h!]
+	\centering
+	%\includegraphics[width=9cm]{multiobj.eps}
+	\end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Limitaciones de la Dominancia de Pareto}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Objetivos de la Optimizaci\'on Multi-objetivo}
+	The main goal in multi-objective optimization is to generate as many elements of the Pareto optimal set as possible.
+	\begin{block}{Convergence}
+	Allows to measure how far the solutions found are, from the true Pareto front.
+	\end{block}
+	\begin{block}{Spread}
+	Indicates how well-distributed are the solutions on the true Pareto front (or its approximation).
+	\end{block}
+	Usually, solving a MOP consists of converging as fast as possible to the Pareto front (convergence) 
+	while keeping a well-distributed set of solutions along the Pareto front (spread).
+\end{frame}
+
+\subsection{Algoritmos Evolutivos}
+
+\begin{frame}
+\frametitle{Por qu\'e Algoritmos Evolutivos?}
+An EA uses some mechanisms inspired by biological evolution, which have been shown to be efficient on a large set of difficult problems. EAs are said to be population-based algorithms because they use a set (population) of solutions that is updated at each iteration (generation).
+	\begin{block}{Exact algorithms:}
+	  \begin{itemize}
+		\item Exploring the search space is time consuming
+		\item Solutions are often given sequentially
+	  \end{itemize}
+	\end{block}
+	\begin{block}{Population-based algorithms ($\supseteq$ EAs):}
+	  \begin{itemize}
+		\item Give a set of solutions in one generation (one run of the algorithm)
+		\item Have a low complexity
+		\item Drawback : convergence cannot be guaranteed
+	  \end{itemize}
+	\end{block}
+\end{frame}
+
+\subsection{Optimizaci\'on por C\'umulo de Part\'iculas}
+\begin{frame}
+	\frametitle{C\'umulos de Part\'iculas}
+	The main goal of the human immune system is to protect the internal components of
+	the human body by fighting against foreign elements.
+	\begin{block}{Principales elementos}
+	  \begin{itemize}
+		\item B cells		
+		B-cells get activated when an infection occurs. B cell starts to divide to produce clones of itself. During this process, two new cell types are 			created, plasma cells and B memory cells. Plasma cells produce molecules called antibodies that attach to the surface of the infectious agent.
+		\item Antibodies		
+		Play a key role by attaching the current type of invaders. When an antibody fits to an antigen, ''eaters" cells use this recognition and ''eats" them.
+		\item Antigens
+		Represents the pathogens agents (invaders).
+		\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Configuraciones}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{multiobj.eps}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Topolog\'ias}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{multiobj.eps}
+	\end{figure}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Aspectos Avanzados}
+	\begin{block}{Some features of an IS :}
+	  \begin{itemize}
+		\item Positive and negative selection
+
+		Process of discrimination of self/non-self cells that prevents
+		autoimmuno diseases. 
+%This process filters out the cells that would work against the self-cells and only
+%the cells that would not bind the self-cells circulate to fight against the antigens
+		\item Clonal selection and expansion
+
+		Process of selection of useful cells that recognize the antigen and reproduce those cells. 
+%This process of cloning  multiplies the useful cells that are capable of recognizing the antigens. Therefore, the B cells that
+%contain the specific receptor that match a particular antigen are also multiplied. In this process, 
+		The clones suffer hypermutation that alters the shape of the receptor,
+%also called receptor editing, thus
+		increasing the {\bf affinity} between the clone and the specific antigen
+		\item Immune memory
+		
+		B memory cells remember the shape of the antigen that they have fought and recollect when they see the same antigen again. 
+		This process helps the system to produce cells with higher affinities
+		\item Jerne’s idiotropic network
+
+		Deals with the interaction of antibodies. B cells communicates the shape of the antigen amongst them.
+	  \end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{El algoritmo PSO}
+	AIS typically exploit the immune system's characteristics of learning and memory to solve a problem.
+
+	\begin{block}{Main elements of an AIS}
+	\begin{itemize}
+	\item A set of immune agents (antibodies) that try to find the best binding to fit to pathogen agents (antigens).
+	\item A set of cells that record characteristics of antigens previously encountered.
+	\item Communication between these entities.
+	\item The capability of some cells to clone (asexual reproduction) and mutate.
+	\end{itemize}
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Algoritmo can\'onico PSO}
+\begin{algorithm}[H]
+Define the search space $\mathbb{S}$, objectives functions $f_i$, constraints $g_j, h_k$\;
+$A(t=0) \longleftarrow$ Initialize offline population\;
+$B(t=0) \longleftarrow$ Initialize online population with random individuals\;
+\While{ $\neg$ stop criterion}{
+Evaluate population $B(t)$ using $f_i, g_j, h_k$\;
+$B_1(t) \longleftarrow$ Define affinities($B(t)$, $[A(t)]$)\;
+$B_2(t) \longleftarrow$ Selection for cloning($B_1(t)$, $[A(t)]$)\;
+$B_3(t) \longleftarrow$ Proliferation and mutation($B_2(t)$)\;
+$B_4(t) \longleftarrow$ Diversification \& Suppression\;
+$B(t+1) \longleftarrow B_3(t) \cup B_4(t)$\;
+$A(t+1) \longleftarrow$ Update($A(t), B(t+1)$)\;
+$t \longleftarrow t + 1$\;
+}
+\caption{Outline of the canonical MOAIS}
+\end{algorithm}
+\end{frame}
+
+ \begin{frame}
+	\frametitle{Objetivos de MOPSO}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{multiobj.eps}
+	\end{figure}
+\end{frame}
+\begin{frame}
+	\frametitle{Algoritmo Can\'onico MOPSO}
+	\begin{figure}[h!]
+	\centering
+	\includegraphics[width=9cm]{multiobj.eps}
+	\end{figure}
+\end{frame}
+
+
+\subsection{Estado del Arte}
+\begin{frame}
+	\frametitle{Previous algorithms}
+	Since 2002, MOAIS algorithms have been shown to be efficient in MOO. Nevertheless, no results on true AIS have been provided for hard problems (DTLZ class).
+	\begin{block}{Some facts}
+		\begin{itemize}
+		\item True MOAIS only tested on easy MOP
+		\item MOAIS tested on hard problem uses recombination
+		\item MOAIS never combined with Hypervolume before
+		\item A few comparison with state-of-the-art algorithms
+		\end{itemize}
+	\end{block}
+	The most common idea adopted in MOAIS is to define two sets of solutions. Some cells are considered as the worst solutions, while the others are considered as good solutions. Most of the algorithm uses the clonal selection principle and classical Pareto dominance ranking. 
+\end{frame}
+\subsection{Hipervolumen}
+\begin{frame}
+	\frametitle{definicion del Hipervolumen}
+	Hypervolume is an indicator used to measure and compare the quality of final solutions in population-based algorithms.
+	This indicator represents the surface (or the volume for more than 2 objectives) of the region dominated by solutions found so far.
+
+	Let $\Lambda$ denote the Lebesgue measure, then the $\mathcal{S}$ metric is defined as
+	$$
+	\mathcal{S}(A,y_{ref}) = \Lambda \left(\bigcup_{y \in A} \left\{ y' |~ y \prec y' \prec y_{ref} \right\} \right), A \subseteq \mathbb{R}^m
+	$$
+	
+	where: 
+	
+	$A$ : subset of the objective space,
+	
+	$y_{ref}$ : reference point that is dominated by all Pareto-optimal solutions,
+	
+	$"\prec"$ : the dominance relation.
+\end{frame} 
+\begin{frame}
+	\frametitle{Hipervolumen}
+	\begin{figure}[h!]
+	    \centering
+    	\includegraphics[width=8cm]{hypervolume.eps}
+  	\end{figure}
+\end{frame}
+\begin{frame}
+	\frametitle{Hipervolume vs contribuci\'on al Hipervolumen}
+	We wants to select the $p$ solutions that maximize the hypervolume among a population of $n$ individuals.
+	\begin{block}{Hypervolume indicator}
+		\begin{itemize}
+		\item Computes the whole set of solutions
+		\item Complexity increases with the number of objectives
+		\item Time consuming
+		\item Select the optimal set of $p$ solutions
+		\end{itemize}
+	\end{block}
+	\begin{block}{Hypervolume contribution}
+		\begin{itemize}
+		\item Considers only the contribution of one solution in maximizing the hyervolume
+		\item Complexity acceptable
+		\item Easy implementation
+		\item the chosen set can be different than the optimal set of $p$ solutions !!
+		\item But, error ratio $<35 \%$
+		\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}
+	\frametitle{Hypervolume contribution}
+	\begin{figure}[H]
+	    \centering
+    	\includegraphics[width=8cm]{hypcont.eps}
+  	\end{figure}
+\end{frame}
+
+
+
+\section{Algoritmo MOPSOhv}
+\frame{\tableofcontents[currentsection]}
+\subsection{Descripci\'on del Algoritmo}
+
+\begin{frame}
+\frametitle{Ciclo Principal}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=4cm]{mainalgo.eps}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Divisi\'on de la Poblaci\'on}	
+	
+	\begin{block}{La poblaci\'on se divide en dos:}
+	\begin{itemize}
+	  \item $gBest$ (Archivo), s\'olo esta compuesto de soluciones no dominadas.
+	  \item C\'umulo, la poblaci\'on principal.	
+	\end{itemize}
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Actualizando la Poblaci\'on}
+\end{frame}
+
+\begin{frame}
+ \frametitle{selecci\'on de l\'ideres}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Actualizar el archivo}
+	\begin{block}{}		
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Influencia de l\'ider Global ($gBest$)}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Influencia de l\'ideres locales ($lBest$)}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Influencia de la Turbulencia}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Incluencia del factor de Inercia}	
+\end{frame}
+
+
+
+
+
+\section{Experiments}
+\frame{\tableofcontents[currentsection]}
+\subsection{Indicadores de Calidad}
+\begin{frame}
+	\frametitle{Indicadores de Calidad}
+	\begin{block}{Hypervolume}
+		Indicates the behavior of the algorithms for both convergence and spread. The reference point is 		computed 			according to both the algorithms and the true Pareto front.
+	\end{block}
+	\begin{block}{IGD}
+		Measures how far the elements in the Pareto optimal set are from those in the set of non-dominated vectors found.
+		$$
+		IGD = \frac{\sqrt{\sum_{i=1}^{n}d_i^2}}{n}
+		$$
+		where:
+	
+		$n$ is the number of vectors in the Pareto optimal set.
+
+		$d_i$: Euclidean distance between each of these solutions and the nearest member of the set of the non-dominated vectors found
+	\end{block}
+\end{frame}
+\begin{frame}
+	\frametitle{Indicadores de Calidad}
+	\begin{block}{Two sets coverage}
+		Indicator that counts how many solutions of a population dominate solutions from another population.
+		$$
+		I_c(A,B) = \frac{|\{~\vec{x} \in A ~|~ \exists ~ \vec{y} \in B ~:~ \vec{x} \prec \vec{y}~\}|}{|A|}
+		$$
+	\end{block}
+	\begin{block}{Spread}
+		Measures the extent of spread achieved among the obtained solutions:
+		$$
+		\Delta = \frac{d_f + d_l + \sum_{i=1}^{n-1} |d_i-\bar{d}|}{d_f + d_l + \bar{d}~(n-1)}
+		$$
+		where: 
+
+		$d_i$ is the Euclidean distance between consecutive solutions,
+
+		$\bar{d}$ is the mean of these distances,
+
+		$d_f$ and $d_l$: Euclidean distances to the extreme solutions of the PF.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Par\'ametros}
+\end{frame}
+
+\subsection{Resultados}
+\begin{frame}
+	\frametitle{ZDT}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{DTLZ}
+\end{frame}
+
+\begin{frame}
+\frametitle{Por qu\'e funciona?}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pruebas de Escalabilidad}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Por qu\'e escala?}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+\section{Conclusiones y Trabajo Futuro}
+\frame{\tableofcontents[currentsection]}
+\begin{frame}
+	\frametitle{Conclusiones}
+	
+\end{frame}
+\begin{frame}
+	\frametitle{Trabajo Futuro}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Preguntas?}
+	\begin{center} {\huge Gracias por su atenci\'on}
+	\end{center}
+
+\end{frame}
+\end{document}

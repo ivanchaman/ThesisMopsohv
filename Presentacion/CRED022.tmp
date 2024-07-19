@@ -1,0 +1,675 @@
+\documentclass[10pt,compress]{beamer}
+\usepackage[ruled,lined,linesnumbered,noend]{algorithm2e}
+%\usepackage[chapter,ruled,rightnl,lined,vlined]{algorithm}
+%\usepackage[noend]{algorithmic}
+%\input{spanishAlgorithmic} % mi archivo de traduccion
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb}
+\usepackage{colortbl}
+\usepackage[francais]{babel}
+\usepackage[francais]{layout}
+\usepackage[utf8x]{inputenc}
+\usepackage{nantes_theme}
+\usepackage{epsfig}
+\setbeamercolor{background canvas}{bg=white}
+\usepackage{marvosym}
+\usepackage{wasysym}
+%\justifying
+% -- Colors used ---------------------------------------------------------
+\usepackage{fancybox}
+%\usepackage{slidesec}
+%\usepackage{latexsym}
+%\usepackage{graphicx}
+%\usepackage{amssymb}
+%\usepackage{amsmath}
+% \usepackage{graphicx}
+% \usepackage{rotate}
+% \usepackage{lscape}
+% \usepackage{xspace}
+% \usepackage{float}
+% \usepackage{color}
+ 
+%\definecolor{vertfonce} {rgb}{0.03,0.345,0.427}
+%\definecolor{mauvefonce} {rgb}{0.5,0.0,0.5}
+%\definecolor{vertMIC} {rgb}{0.51,0.76,0.15}
+
+\newcommand{\BLEU}[1]{\textcolor{blue}{{\bf #1}}\xspace}
+%\newcommand{\PINK}[1]{\textcolor{magenta}{{\bf #1}}\xspace}
+%\newcommand{\ROUGE}[1]{\textcolor{red}{{\bf #1}}\xspace}
+%\newcommand{\FLUO}[1]{\colorbox{yellow}{#1}\xspace}
+%\newcommand{\CYAN}[1]{\colorbox{cyan}{#1}\xspace}
+%\newcommand{\MAUVEn}[1]{\textcolor{mauvefonce}{ #1}\xspace}
+%\newcommand{\VERTMIC}[1]{\textcolor{vertMIC}{{\bf #1}}\xspace}
+
+%%\definecolor{tbon} {rgb}{0.000,1.000,0.000}
+%\newrgbcolor{tbon} {0.000 1.000 0.000}
+%\newrgbcolor{abon} {0.500 0.900 0.000}
+%\newrgbcolor{bof} {0.900 0.600 0.000}
+%\newrgbcolor{tnul} {1.000 0.000 0.000}
+%
+%\newrgbcolor{lightblue} {0.000 0.000 0.500}
+%
+%\newcommand{\TBON}[1]{\colorbox{tbon}{#1}\xspace}
+%\newcommand{\ABON}[1]{\colorbox{abon}{#1}\xspace}
+%\newcommand{\BOF}[1]{\colorbox{bof}{#1}\xspace}
+%\newcommand{\TNUL}[1]{\colorbox{tnul}{#1}\xspace}
+
+\definecolor{VERTC} {rgb}{0.81,0.99,0.78}
+\definecolor{VERTM} {rgb}{0.41,0.99,0.41}
+\definecolor{VERTF} {rgb}{0.16,0.99,0.03}
+\newcommand{\BOXVERTC}[1]{\colorbox{VERTC}{#1}\xspace}
+\newcommand{\BOXVERTM}[1]{\colorbox{VERTM}{#1}\xspace}
+\newcommand{\BOXVERTF}[1]{\colorbox{VERTF}{#1}\xspace}
+
+\definecolor{ROUGEC} {rgb}{0.99,0.78,0.78}
+\definecolor{ROUGEM} {rgb}{0.99,0.41,0.41}
+\definecolor{ROUGEF} {rgb}{0.99,0.03,0.03}
+\newcommand{\BOXROUGEC}[1]{\colorbox{ROUGEC}{#1}\xspace}
+\newcommand{\BOXROUGEM}[1]{\colorbox{ROUGEM}{#1}\xspace}
+\newcommand{\BOXROUGEF}[1]{\colorbox{ROUGEF}{#1}\xspace}
+
+
+\title{Uso de un Algoritmo de C\'umulo de Part\'iculas \\ 
+       Basado en Hipervolumen para \\ Resolver Problemas Multi-Objetivo}
+%\subtitle{\subtitle}
+\author[MOPSOhv]{
+\vspace{2mm}\\{\textbf{Ing. Iv\'an Christhofer Chaman Garc\'ia}} \\
+Asesor:\\
+{\textbf{Dr. Carlos A. Coello Coello}}
+}
+\institute{
+\begin{center}
+\textbf{
+Centro de Investigaci\'on y de Estudios Avanzados \\
+del Instituto Polit\'ecnico Nacional \\
+Departamiento de Computaci\'on. \\}
+\end{center}
+}
+\date{\footnotesize{\vspace{2mm}\\
+5 de Octubre de 2012}}
+\beamertemplatetransparentcovered
+
+\setbeamercolor{frametitle}{bg=lightgray}
+
+\begin{document}
+
+%
+% =========================================================================================================
+%
+{ % Redefinition du bas du style afin de ne pas afficher le numero de slide sur la page 1
+  \defbeamertemplate*{footline}{}
+  {
+    \leavevmode%
+    \hbox{%
+    \begin{beamercolorbox}[wd=.25\paperwidth,ht=2.25ex,dp=1ex,left]{authors in head/foot}%
+        \usebeamerfont{author in head/foot}\hspace*{1ex}
+     \end{beamercolorbox}%
+    \begin{beamercolorbox}[wd=.75\paperwidth,ht=2.25ex,dp=1ex,right]{authors in head/foot}%
+        \usebeamerfont{author in head/foot}\insertshortauthor\hspace*{1ex}
+    \end{beamercolorbox}}%
+    \vskip0pt%
+}
+
+	\frame{\titlepage}
+}
+% =========================================================================================================
+\section{Introducci\'on}
+\frame{\tableofcontents[currentsection]}
+\begin{frame}
+\frametitle{Motivaci\'on}
+	\begin{block}{Principales objetivos de este trabajo:}
+	\begin{itemize}
+	%\justifying
+	\item Implementar un algoritmo basado en c\'umulos de particulas para resolver problemas multi-objetivo.
+	\item Uso del hipervolumen para gu\'ia la b\'usqueda de soluciones.
+	\item Comparar el algoritmo con diferentes algoritimo y conjuntos de problemas de la literatura especializada.
+	\item Pruenas de escalabilidad.
+	\end{itemize}
+	\end{block}
+\end{frame}
+% =========================================================================================================
+\subsection{Optimizaci\'on Multi-objetivo}
+    \begin{frame}
+		\frametitle{Modelando un Problema de Optimizacion Multi-objetivo}
+		\[
+		\left[\begin{array}{ccc}
+			opt & f_i(\vec{x}) & \forall i \in \{1,...,m\} \\
+			con &  & \\
+				& g_j(\vec{x}) \leq 0 & \forall j \in \{1,...,p\} \\
+				& h_k(\vec{x}) = 0 & \forall k \in \{1,...,q\} \\
+				& x_l \in [lb, ub] & \forall l \in \{1,...,r\} \\
+		\end{array}\right]
+		\]
+    \begin{block}{where:}
+	  \begin{itemize}
+		%\justifying
+			\item $opt \in \{min, max\}$,
+			\item $m$ es el n\'umero de funciones objetivo,
+			\item $p$ es el n\'umero de restricciones de desigualdad,
+			\item $q$ es el n\'umero de restricciones de igualdad,
+			\item $r$ es el n\'umero de variables de desici\'on del problema,
+			\item $lb, ub$ son los intervalos del problema (inferior y superior, respectivamente) de cada variable $x_l$.
+	  \end{itemize}
+	\end{block}
+	En adelante, asumimos que todos los objetivos son para minimizaci\'on.
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Ejemplo de un problema con dos objetivos}	
+		\begin{figure}[h!]
+			\centering
+				\includegraphics[scale=0.4]{1-1.eps}
+				\label{fig:multiobj}
+     \end{figure}
+\end{frame}
+% =========================================================================================================
+  \subsection{Definiciones}
+	
+\begin{frame}
+	\frametitle{Definiciones y Notaciones}
+	\begin{block}{Dominancia de Pareto}
+	Un vector $\vec{u} = \left(u_1, \ldots, u_k \right)$ se dice que domina a $\vec{v} = \left(v_1, \ldots, v_k \right)$,
+	  denotado por $\vec{u} \preceq \vec{v}$, si y s\'olo si $\vec{u}$ es parcialmente menor que $\vec{v}$, es decir, 
+	  $\forall i \in \left\{1, \ldots, k \right\}: u_i \leq v_i \wedge \exists i \in \left\{1, \ldots, k\right\}: u_i < v_i$.
+	\end{block}
+		\begin{figure}[h!]
+			\centering
+				\includegraphics[scale=0.4]{1-4.eps}
+				\label{fig:dominanciaPareto}
+     \end{figure}	
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Definiciones y Notaciones}	
+	\begin{block}{Conjunto de \'optimos de Pareto}
+	Los elementos del conjunto de \'optimos de Pareto tienen vectores objetivo que no pueden ser mejorados sin empeorar al menos otro
+  objetivo. Los vectores objetivo de las soluciones \'optimas de Pareto se denominan vectores \textit{no dominados}. 	
+	\end{block}
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Definiciones y Notaciones}
+	\begin{block}{Frente de Pareto} 
+	Los vectores de las funciones objetivo correspondientes al conjunto de \'optimos de Pareto conforman el denominado frente de Pareto  	
+	\end{block}
+	
+	\begin{figure}[h!]
+			\centering
+				\includegraphics[scale=0.4]{1-2.eps}
+				\label{fig:frentePareto}
+     \end{figure}	
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Definiciones y Notaciones}		
+	\begin{block}{Vector Ideal y Vector de Nadir}
+	 \[  f_{ideal}= \left(^{\min}_{\vec{x}\in P^*}f_1\left(\vec{x}\right), \ldots, ^{\min}_{\vec{x}\in P^*}f_k\left(\vec{x}\right) \right)\]
+\[  f_{nadir}= \left(^{\max}_{\vec{x}\in P^*}f_1\left(\vec{x}\right), \ldots, ^{\max}_{\vec{x}\in P^*}f_k\left(\vec{x}\right) \right)\]
+	\end{block}
+	
+	\begin{figure}[h!]
+			\centering
+				\includegraphics[scale=0.4]{1-3.eps}	
+							\label{fig:ideal}
+     \end{figure}	
+\end{frame}
+
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Objetivos de la Optimizaci\'on Multi-objetivo}
+	El objetivo principal de la optimizaci\'on multi-objetivo es generar el mayor n\'umero del conjunto de \'optimos de Pareto posibles.
+	
+	\begin{block}{Convergencia}
+		Permite medir hasta qu\'e punto las soluciones encontradas pertencen al verdadero frente de Pareto.
+	\end{block}
+	\begin{block}{Espaciado}
+		Indica qu\'e tan bien distribuidas son las soluciones en el verdadero frente de Pareto (o su aproximaci\'on).
+	\end{block}
+	Por lo general, la soluci\'on de un problema multi-objetivo consiste en que tan r\'apido converge al frente de Pareto (convergencia), 
+	mientras mantiene un conjunto bien distribuido de soluciones a lo largo del frente de Pareto (Espaciado).
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Elitismo}	
+	\begin{block}{Implementaci\'on del elitismo }
+		\begin{itemize}
+   \item Combinar la poblaci\'on anterior y la nueva.
+   \item Mantener una poblaci\'on secundaria llamada archivo hist\'orico.   
+  \end{itemize}
+  \end{block}
+	
+	  \begin{figure}[H]
+	\centering
+	\includegraphics[scale=0.60]{1-19.eps}
+      \label{fig:elitismo}
+      \end{figure}
+	
+\end{frame}
+
+\subsection{Algoritmos Evolutivos}
+% =========================================================================================================
+\begin{frame}
+\frametitle{¿Por qu\'e Algoritmos Evolutivos?}
+Un algoritmo evolutivo utiliza algunos mecanismos inspirados en la evoluci\'on biol\'ogica, que han demostrado ser eficaces en un gran conjunto de problemas dif\'iciles. 
+Los algoritmo evolutivos est\'an basados ​​en una poblaci\'on, ya que utilizan un conjunto (poblaci\'on) de soluciones que se actualizan en cada iteraci\'on (generaci\'on).
+	\begin{block}{Caracter\'isticas}
+	  \begin{itemize}
+			\item No requieren de conocimientos espec\'ificos sobre el problema.
+			\item Pueden actuar como eficaces optimizadores globales, ya que son menos propensos a quedar atrapados en 
+						\'optimos locales.
+			\item Son f\'aciles de comprender e implementar en forma secuencial y paralela.
+			\item Se pueden hibridizar con otras t\'ecnicas de optimizaci\'on (por ejemplo, t\'ecnicas de programaci\'on 
+						matem\'atica).
+	  \end{itemize}
+	\end{block}
+\end{frame}
+% =========================================================================================================
+\subsection{Optimizaci\'on por C\'umulo de Part\'iculas}
+\begin{frame}
+	\frametitle{C\'umulos de Part\'iculas}
+Un algoritmo basado en c\'umulos de part\'iculas o \textit{Particle Swarm Optimization (PSO)} es una t\'ecnica inspirada en el 
+  comportamiento social del vuelo de las aves o el movimiento de los bancos de peces que intentan encontrar comida.
+	
+	\begin{block}{Principales caracter\'isticas}
+	    \begin{itemize}
+   \item La poblaci\'on es inicializada aleatoriamente y evoluciona iterativamente buscando la mejor soluci\'on posible.
+   \item Realiza una b\'usqueda ciega.
+   \item Trabaja con informaci\'on codificada (binaria, entera o real).
+   \item Es una t\'ecnica de b\'usqueda estoc\'astica.
+  \end{itemize}
+	\end{block}
+	
+	\begin{block}{Direcci\'on de b\'usqueda}  
+  \begin{itemize}
+   \item Su conocimiento sobre el entorno. 
+   \item Su conocimiento hist\'orico.
+   \item El conocimiento hist\'orico (vecindario).
+  \end{itemize} 
+	\end{block}
+\end{frame}
+% =========================================================================================================
+
+\begin{frame}
+	\frametitle{Estructura y Trayectoria de una part\'icula}
+	 \begin{figure}
+	\centering
+	\includegraphics[scale=0.50]{1-5.eps}
+      \label{fig:trayec}
+      \end{figure}						
+\end{frame}
+
+% =========================================================================================================
+\begin{frame}
+	\frametitle{El coraz\'on de esta heur\'istica}
+	\begin{block}{Cambiar la velocidad}
+	\[
+	  \vec{v}^{t+1}_{i} \leftarrow \vec{v}^t_i + \phi_1 \cdot rnd_1 \cdot \left(\vec{pBest}^t_i - \vec{x}^t_i \right) 
+					    + \phi_2 \cdot rnd_2 \cdot \left(\vec{g}^t_i - \vec{x}^t_i \right) 
+    \]	
+		\end{block}
+	\begin{block}{Cambiar la posici\'on}
+		\[
+	  \vec{x}^{t+1}_i \leftarrow  \vec{x}^t_i + \vec{v}^t_i
+      \]
+  \end{block}
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Algoritmo can\'onico}
+	   \begin{algorithm}[H]
+				Funci\'on a optimizarse $f\left(\vec{x}\right)$\;	
+				Iniciar el contador de generaci\'on es $t=0$\;
+				Iniciar aleatoriamente $\vec{x}^0$ y $\vec{v}^0$ de todo el C\'umulo \;
+				Evaluar la funci\'on objetivo con las posiciones $\vec{x}^{0}$\;
+				Encontrar $\vec{pBest}^0$\;
+				Encontrar $\vec{g}^0$\;
+				\While{$t < maxG$}{
+					\For{ $\forall i$ part\'iculas del C\'umulo}{
+						$\vec{v}^{t+1}_{i}\leftarrow \vec{v}^{t}_{i}+\phi_{1}\cdot rnd_{1} \cdot \left(\vec{pBest}^{t}-x^{t}_{i}\right)+\phi_{2}\cdot rnd_{2} \cdot \left(\vec{g}^{t}-\vec{x}^{t}_{i}\right)$\;
+						$\vec{x}^{t+1}_{i} \leftarrow \vec{x}^{t}_{i}+\vec{v}^{t+1}_{i}$\;
+						Evaluar la funci\'on objetivo con las nuevas posiciones $\vec{x}^{t+1}$\;
+				}
+				Encontrar $\vec{pBest}^t$\;
+				Encontrar $\vec{g}^t$\;
+				$t=t+1$\;				
+			}
+			\Return La mejor soluci\'on encontrada\;
+		\caption{PSO can\'onico}
+\end{algorithm}
+\end{frame}
+% =========================================================================================================
+
+\begin{frame}
+	\frametitle{Entornos de interacci\'on}
+	\begin{figure}
+	\centering
+	\includegraphics[scale=0.50]{1-11.eps}	  
+      \label{fig:entornos}
+      \end{figure}
+\end{frame}
+% =========================================================================================================
+\begin{frame}
+	\frametitle{Topolog\'ias de Vecindarios}
+ \begin{figure}
+	\centering
+	\includegraphics[scale=0.40]{1-6.eps}	
+      \label{fig:vecindarios}
+      \end{figure}
+\end{frame}
+% =========================================================================================================
+
+ \begin{frame}
+	\frametitle{Aspectos avanzados del algoritmo}
+		\begin{block}{Control de velocidad}
+			\[	   
+				\vec{v}^t_i = \{
+						\begin{matrix} 
+								\vec{v}^{t+1}_i & \mbox{si}& \vec{v}^{t+1}_i < \vec{v}_{\max}\\
+								\vec{v}_{\max} & \mbox{si}& \vec{v}^{t+1}_i \geq \vec{v}_{\max}
+						\end{matrix}    
+			\]	
+		\end{block}
+	\begin{block}{Factor de Constricci\'on}
+		\[  \vec{v}^{t+1}_{i} = \chi \left( \vec{v}^t_i + \phi_1 \cdot rnd_1 \cdot \left(\vec{pBest}^t_i - \vec{x}^t_i \right) 
+					    + \phi_2 \cdot rnd_2 \cdot \left(\vec{g}^t_i - \vec{x}^t_i \right) \right) 
+     \]
+  \end{block}
+		\begin{block}{Factor de Inercia}
+		\[  
+		\vec{v}^{t+1}_{i} = \omega \cdot \vec{v}^t_i + \phi_1 \cdot rnd_1 \cdot \left(\vec{pBest}^t_i - \vec{x}^k_i \right) 
+					    + \phi_2 \cdot rnd_2 \cdot \left(\vec{g}^t_i - \vec{x}^t_i \right) 
+     \]
+  \end{block}
+\end{frame}
+% =========================================================================================================
+
+\begin{frame}
+	\frametitle{Modelos de configuraci\'on}
+	
+	\begin{block}{Modelo completo}
+     \textbf{$\phi_1 > 0 \text{ y } \phi_2 > 0$} 
+	\end{block}
+	\begin{block}{Modelo cognitivo}
+     \textbf{$\phi_1 > 0 \text{ y } \phi_2 = 0$} 
+	\end{block}
+	\begin{block}{Modelo social}
+     \textbf{$\phi_1 = 0 \text{ y } \phi_2 > 0$}
+	\end{block}
+	\begin{block}{Modelo social exclusivo}
+     \textbf{$\phi_1 = 0 \text{, } \phi_2 > 0 \text{ y } \vec{g} = \vec{x}_i$}
+  \end{block}
+\end{frame}
+% =========================================================================================================
+
+\begin{frame}
+	\frametitle{Descripci\'on de la versi\'on multi-objetivo}	
+	\begin{block}{Metas principales}
+		\begin{itemize}
+   \item Maximizar el mayor n\'umero de elementos del conjunto de \'optimos de Pareto.
+   \item Minimizar la distancia entre las soluciones obtenidas por el algoritmo y el conjunto de \'optimos de Pareto.
+   \item Maximizar la dispersi\'on de las soluciones encontradas, de modo que podamos tener una distribuci\'on lo m\'as uniforme posible.
+  \end{itemize}
+  \end{block}
+\end{frame}
+% =========================================================================================================
+
+\begin{frame}
+	\frametitle{Algoritmo can\'onico multi-objetivo}
+	   \begin{algorithm}[H]
+				Problema de optimizaci\'on multi-objetivo $F\left(\vec{x}\right)$\;	
+				Iniciar aleatoriamente $\vec{x}^0$ y $\vec{v}^0$ de todo el C\'umulo\;							
+				Evaluar las funciones objetivo con las part\'iculas del C\'umulo\;
+				Seleccionar el $\vec{pBest}^0$ inicial de las part\'iculas\;
+				Insertar las part\'iculas no dominadas en el archivo $A^{0}$\;
+				\While{$t < maxG$}{
+					Seleccionar un $g$^t\;					
+					\For{ $\forall i$ part\'iculas del C\'umulo }{
+							$\vec{v}^{t+1}_{i}\leftarrow\omega\cdot \vec{v}^{t}_{i}+\phi_{1}\cdot rnd_{1} \cdot \left(\vec{pBest}^{t}_{i}-\vec{x}^{k}_{i}\right) +\phi_{2}\cdot rnd_{2} \cdot \left(\vec{g}^{t}_{i}-\vec{x}^{k}_{i}\right)$\;
+							$\vec{x}^{t+1}_{i}\leftarrow \vec{x}^{t}_{i}+\vec{v}^{t+1}_{i}$\;
+			    }					
+					Evaluar las funciones objetivo con las part\'iculas del C\'umulo\;
+					Actualizar el $\vec{pBest}^t$ de las part\'iculas\;
+					Actualizar las part\'iculas no dominadas en el archivo $A^{t}$\;
+					$t\leftarrow t+1$\;
+	}
+	\Return Soluciones no dominadas en un archivo $A$\;
+		\caption{PSO can\'onico multi-objetivo}
+\end{algorithm}
+\end{frame}
+
+% =========================================================================================================
+
+\subsection{Estado del Arte}
+\begin{frame}
+	\frametitle{NSGA-II}
+	Since 2002, MOAIS algorithms have been shown to be efficient in MOO. Nevertheless, no results on true AIS have been provided for hard problems (DTLZ class).
+	\begin{block}{Some facts}
+		\begin{itemize}
+		\item True MOAIS only tested on easy MOP
+		\item MOAIS tested on hard problem uses recombination
+		\item MOAIS never combined with Hypervolume before
+		\item A few comparison with state-of-the-art algorithms
+		\end{itemize}
+	\end{block}
+	The most common idea adopted in MOAIS is to define two sets of solutions. Some cells are considered as the worst solutions, while the others are considered as good solutions. Most of the algorithm uses the clonal selection principle and classical Pareto dominance ranking. 
+\end{frame}
+
+
+
+\subsection{Hipervolumen}
+\begin{frame}
+	\frametitle{definicion del Hipervolumen}
+	Hypervolume is an indicator used to measure and compare the quality of final solutions in population-based algorithms.
+	This indicator represents the surface (or the volume for more than 2 objectives) of the region dominated by solutions found so far.
+
+	Let $\Lambda$ denote the Lebesgue measure, then the $\mathcal{S}$ metric is defined as
+	$$
+	\mathcal{S}(A,y_{ref}) = \Lambda \left(\bigcup_{y \in A} \left\{ y' |~ y \prec y' \prec y_{ref} \right\} \right), A \subseteq \mathbb{R}^m
+	$$
+	
+	where: 
+	
+	$A$ : subset of the objective space,
+	
+	$y_{ref}$ : reference point that is dominated by all Pareto-optimal solutions,
+	
+	$"\prec"$ : the dominance relation.
+\end{frame} 
+\begin{frame}
+	\frametitle{Hipervolumen}
+	\begin{figure}[h!]
+	    \centering
+    	\includegraphics[width=8cm]{hypervolume.eps}
+  	\end{figure}
+\end{frame}
+\begin{frame}
+	\frametitle{Hipervolume vs contribuci\'on al Hipervolumen}
+	We wants to select the $p$ solutions that maximize the hypervolume among a population of $n$ individuals.
+	\begin{block}{Hypervolume indicator}
+		\begin{itemize}
+		\item Computes the whole set of solutions
+		\item Complexity increases with the number of objectives
+		\item Time consuming
+		\item Select the optimal set of $p$ solutions
+		\end{itemize}
+	\end{block}
+	\begin{block}{Hypervolume contribution}
+		\begin{itemize}
+		\item Considers only the contribution of one solution in maximizing the hyervolume
+		\item Complexity acceptable
+		\item Easy implementation
+		\item the chosen set can be different than the optimal set of $p$ solutions !!
+		\item But, error ratio $<35 \%$
+		\end{itemize}
+	\end{block}
+\end{frame}
+\begin{frame}
+	\frametitle{Hypervolume contribution}
+	\begin{figure}[H]
+	    \centering
+    	\includegraphics[width=8cm]{hypcont.eps}
+  	\end{figure}
+\end{frame}
+
+
+
+\section{Algoritmo MOPSOhv}
+\frame{\tableofcontents[currentsection]}
+\subsection{Descripci\'on del Algoritmo}
+
+\begin{frame}
+\frametitle{Ciclo Principal}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=4cm]{mainalgo.eps}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Divisi\'on de la Poblaci\'on}	
+	
+	\begin{block}{La poblaci\'on se divide en dos:}
+	\begin{itemize}
+	  \item $gBest$ (Archivo), s\'olo esta compuesto de soluciones no dominadas.
+	  \item C\'umulo, la poblaci\'on principal.	
+	\end{itemize}
+	\end{block}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Actualizando la Poblaci\'on}
+\end{frame}
+
+\begin{frame}
+ \frametitle{selecci\'on de l\'ideres}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+  \frametitle{Actualizar el archivo}
+	\begin{block}{}		
+	\end{block}
+\end{frame}
+
+
+\begin{frame}
+	\frametitle{Influencia de l\'ider Global ($gBest$)}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Influencia de l\'ideres locales ($lBest$)}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Influencia de la Turbulencia}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Incluencia del factor de Inercia}	
+\end{frame}
+
+
+
+
+
+\section{Experiments}
+\frame{\tableofcontents[currentsection]}
+\subsection{Indicadores de Calidad}
+\begin{frame}
+	\frametitle{Indicadores de Calidad}
+	\begin{block}{Hypervolume}
+		Indicates the behavior of the algorithms for both convergence and spread. The reference point is 		computed 			according to both the algorithms and the true Pareto front.
+	\end{block}
+	\begin{block}{IGD}
+		Measures how far the elements in the Pareto optimal set are from those in the set of non-dominated vectors found.
+		$$
+		IGD = \frac{\sqrt{\sum_{i=1}^{n}d_i^2}}{n}
+		$$
+		where:
+	
+		$n$ is the number of vectors in the Pareto optimal set.
+
+		$d_i$: Euclidean distance between each of these solutions and the nearest member of the set of the non-dominated vectors found
+	\end{block}
+\end{frame}
+\begin{frame}
+	\frametitle{Indicadores de Calidad}
+	\begin{block}{Two sets coverage}
+		Indicator that counts how many solutions of a population dominate solutions from another population.
+		$$
+		I_c(A,B) = \frac{|\{~\vec{x} \in A ~|~ \exists ~ \vec{y} \in B ~:~ \vec{x} \prec \vec{y}~\}|}{|A|}
+		$$
+	\end{block}
+	\begin{block}{Spread}
+		Measures the extent of spread achieved among the obtained solutions:
+		$$
+		\Delta = \frac{d_f + d_l + \sum_{i=1}^{n-1} |d_i-\bar{d}|}{d_f + d_l + \bar{d}~(n-1)}
+		$$
+		where: 
+
+		$d_i$ is the Euclidean distance between consecutive solutions,
+
+		$\bar{d}$ is the mean of these distances,
+
+		$d_f$ and $d_l$: Euclidean distances to the extreme solutions of the PF.
+	\end{block}
+\end{frame}
+
+\begin{frame}
+	\frametitle{Par\'ametros}
+\end{frame}
+
+\subsection{Resultados}
+\begin{frame}
+	\frametitle{ZDT}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{DTLZ}
+\end{frame}
+
+\begin{frame}
+\frametitle{Por qu\'e funciona?}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Pruebas de Escalabilidad}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+\begin{frame}
+\frametitle{Por qu\'e escala?}
+  \begin{figure}[h!]
+    \centering
+    \includegraphics[width=9cm]{unreachpareto}
+  \end{figure}
+\end{frame}
+
+\section{Conclusiones y Trabajo Futuro}
+\frame{\tableofcontents[currentsection]}
+\begin{frame}
+	\frametitle{Conclusiones}
+	
+\end{frame}
+\begin{frame}
+	\frametitle{Trabajo Futuro}	
+\end{frame}
+
+\begin{frame}
+	\frametitle{Preguntas?}
+	\begin{center} {\huge Gracias por su atenci\'on}
+	\end{center}
+
+\end{frame}
+\end{document}
