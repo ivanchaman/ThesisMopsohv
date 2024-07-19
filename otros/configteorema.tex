@@ -1,0 +1,17 @@
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\it\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\chaptername \ \thechapter}{}}
+\fancyhead[LO,RE]{}
+\fancyhead[LE]{{\bfseries\thepage} \ \ \rightmark}
+\fancyhead[RO]{\leftmark \ \ {\bfseries\thepage}}
+\fancyfoot[LO,LE]{Cinvestav}
+\fancyfoot[CO,CE]{}
+\fancyfoot[RO,RE]{Departamento de Computación}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newtheorem{definicion}{Definici\'on}[chapter]
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{corolario}[teorema]{Corolario}
+\newtheorem{axioma}{Axioma}
+\newtheorem{proposicion}{\sc Proposici\'on}[section]
