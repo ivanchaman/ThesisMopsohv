@@ -1,0 +1,73 @@
+\addcontentsline{toc}{chapter}{Introducci\'on}
+\chapter*{Introducci\'on}
+%\minitoc
+  Se proporciona una breve introducci\'on a este trabajo de tesis, as\'i como el planteamiento del problema 
+  a resolverse y los objetivos planteados. En la parte final se propociona una breve descripci\'on 
+  del contenido de cada cap\'itulo de este trabajo de tesis.
+
+\section*{Antecedentes}
+
+  Los algoritmos evolutivos pueden verse como una analog\'ia del mecanismo de selecci\'on natural, cuyo principal objetivo es 
+  simular el proceso evolutivo en una computadora y usarlo para resolver problemas de optimizaci\'on. El uso de 
+  algoritmos evolutivos se ha extendido a un gran n\'umero de dominios debido, sobre todo, a su simplicidad conceptual
+  y facilidad de uso.
+  
+  Un problema de optimizaci\'on multi-objetivo difiere de un problema de  optimizaci\'on mono-objetivo en la cantidad de 
+  objetivos a optimizarse. Mientras que en un problema de optimizaci\'on mono-objetivo se busca la mejor soluci\'on posible 
+  en todo el espacio de b\'usqueda, en un problema multi-objetivo, se tienen varios objetivos (posiblemente 
+  en conflicto), y normalmente no hay una soluci\'on \'unica sino un conjunto de soluciones compromiso. Por lo tanto, en este 
+  \'ultimo caso se requiere elegir una soluci\'on entre varias, a partir de las preferencias del usuario.
+  
+  La principal motivaci\'on para usar algoritmos evolutivos para resolver problemas de optimizaci\'on multi-objetivo  
+  es explotar su poblaci\'on, de manera que podamos generar varios miembros del conjunto de \'optimos de Pareto en una sola 
+  ejecuci\'on del algoritmo, en lugar de tener que realizar una serie de ejecuciones por separado como en el caso de las 
+  t\'ecnicas de programaci\'on matem\'atica. Adem\'as, los algoritmos evolutivos son menos susceptibles a la forma o la 
+  continuidad del frente de Pareto, mientras que las t\'ecnias de programaci\'on matem\'atica suelen tener dificultades 
+  para lidiar con frentes de Pareto desconectados y no convexos.
+
+\section*{Planteamiento del problema}
+
+El uso de esquemas de selecci\'on basados en la optimalidad de Pareto presenta diversas limitantes, dentro de las que destaca
+su pobre escalabilidad cuando se aumenta la cantidad de funciones objetivo. En a\~nos recientes, se han planteado diferentes 
+mecanismos de selecci\'on para algoritmos evolutivos multi-objetivo que no se basan en la optimalidad de Pareto. Una de las 
+alternativas m\'as prometedoras es el uso de indicadores de desempe\~no para seleccionar soluciones. De entre los posibles 
+indicadores que pueden utilizarse, el hipervolumen (o m\'etrica $\mathcal{S}$) es, sin duda el m\'as popular debido, sobre 
+todo, a sus propiedades matem\'aticas (se ha podido demostrar que maximizar el hipervolumen conduce a lograr convergencia). 
+En este trabajo se plantea incorporar en un algoritmo de c\'umulos de part\'iculas un mecanismo  basado en el indicador de 
+hipervolumen para seleccionar a los mejores l\'ideres que conducir\'an la b\'usqueda. El nuevo algoritmo deber\'a ser competitivo
+con respecto a algoritmos evolutivos multi-objetivo del estado del arte.
+
+\section*{Objetivos}
+
+\subsubsection*{Objetivo general}
+
+Desarrollar un algoritmo multi-objetivo con base en la metaheur\'istica conocida como c\'umulos de part\'iculas, el cual utilice el 
+hipervolumen en su mecanismo de selecci\'on y sea competitivo con otros algoritmos evolutivos multi-objetivo.
+
+\subsubsection*{Objetivos espec\'ificos}
+
+\begin{itemize}
+ \item Estudiar las diferentes maneras de implementar el c\'alculo del hipervolumen (de manera exacta o aproximada).
+ \item Analizar diferentes algoritmos basados en c\'umulos de part\'iculas para establecer las diferencias y 
+      similitudes entre ellos.
+ \item Dise\~nar un mecanismo de selecci\'on que aproveche las caracter\'isticas del hipervolumen, e incorpor\'arselo 
+ a un algoritmo multi-objetivo basado en c\'umulos de part\'iculas.
+ \item Comparar el desempe\~no de las soluciones del algoritmo desarrallado con respecto a las soluciones de otros algoritmos
+  utilizando un conjunto diverso de problemas de la literatura especializada.
+\end{itemize}
+
+\section*{Organizaci\'on}
+
+La organizaci\'on de este trabajo de tesis es el siguiente:
+
+\begin{itemize}
+ \item  En el cap\'itulo 1 se describen algunos conceptos b\'asicos sobre algoritmos evolutivos, optimizaci\'on multiobjetivo, 
+ la metaheur\'istica de c\'umulos de part\'iculas y las carater\'isticas del indicador de hipervolumen que servir\'an como 
+ marco te\'orico  para el resto del trabajo de tesis. Adem\'as, se proporciona una revision del estado del arte sobre los 
+ algoritmos evolutivos multi-objetivo.
+ \item En el cap\'itulo 2 se describe el algoritmo de c\'umulos de part\'iculas multi-objetivo propuesto en este trabajo de 
+ tesis, cuyo mecanismo de selecci\'on est\'a basado en la contribuci\'on al hipervolumen y adopta un operador de turbulencia.
+ \item En el cap\'itulo 3 se compara el algoritmo propuesto con respecto a otros algoritmos evolutivos multi-objetivo tomados
+ de la literatura especializada  utilizando los indicadores de calidad descritos en el cap\'itulo 1.
+ \item En el cap\'itulo 4 se proporcionan las conclusiones y el trabajo futuro.
+\end{itemize}
