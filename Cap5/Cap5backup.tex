@@ -1,0 +1,89 @@
+\begin{chapter}{Conclusiones y trabajo futuro}
+  
+  \section{Resumen}
+  
+  El objetivo principal de este trabajo de tesis fue proponer un nuevo algoritmo multi-objetivo basado los c\'umulos de 
+  part\'iculas la cual mostrara ser competitiva con respecto a algoritmos evolutivos multiobjetivo (AEMOs) representativos del estado 
+  del arte.
+
+  Para llevar a cabo este objetivo se realiz\'o un estudio de las metaheur\'isticas multi-objetivo basadas en 
+  c\'umulos de part\'iculas que existen actualmente. Posteriormente, se realiz\'o un estudio del denominado hipervolumen 
+  para poder incorporarlo en el mecanismo de selecci\'on de nuestra metaheur\'istica. A este respecto, se identificaron
+  varias formas de utilizar el hipervolumen como mecanismo de selecci\'on, sobresaliendo
+  el uso del algoritmo HypE que usa un m\'etodo para aproximar las contribuciones al hipervolumen. 
+  Como producto de este an\'alisis se propuso un algoritmo de c\'umulos de part\'iculas multi-objetivo que aprovecha las contribuciones al 
+  hipervolumen para seleccionar la mejor gu\'ia global a fin de generar soluciones potenciales no dominadas.
+
+  El algoritmo propuesto fue comparado con respecto a NSGA-II, SMS-EMOA y MOPSOcd. La evaluaci\'on se realiz\'o utilizando un conjunto 
+  de problemas multi-objetivo que re\'unen diferentes 
+  caracter\'isticas que causan dificultades a un algoritmo evolutivo multi-objetivo.
+  
+  \section{Conclusiones}
+  
+  A partir de los experimentos realizados se desprenden las siguientes conclusiones:
+
+  \begin{itemize}
+  \item Una de las principales dificultades en extender el algoritmo del PSO a una versi\'on multi-objetivo, es encontrar la mejor 
+  forma de seleccionar al l\'ider de cada part\'icula en el c\'umulo. Esta dificultad radica en que no hay una noci\'on clara sobre 
+  c\'omo definir qui\'en es el mejor alcanzado hasta el momento (\textbf{\textit{pBest}}) y el mejor 
+  alcanzado por toda la poblaci\'on (\textbf{\textit{gBest}}). En los problemas de optimizaci\'on multi-objetivo, 
+  todas las soluciones no dominadas son igualmente buenas, por lo que cualquiera de ellas puede adoptarse como l\'ider. Por tanto, el 
+  uso del hipervolumen nos permiti\'o seleccionar al mejor l\'ider alcanzado de un conjunto de soluciones no dominadas. La selecci\'on
+  se realiza conforme a su contribuci\'on al hipervolumen, es decir, aquella part\'icula que contribuye m\'as al valor del hipervolumen
+  es seleccionada como l\'ider.
+  
+  \item El uso del hipervolumen para seleccionar al l\'ider en nuestro algoritmo muestra una mejora con respecto al algoritmo MOPSOcd. 
+  
+  \item La forma de seleccionar al conjunto de part\'iculas que influyen en el entorno social  del algoritmo ($pBest$) mejora 
+  considerablemente la b\'usqueda de nuevas soluciones no dominadas. Es mejor utilizar el archivo o la poblaci\'on
+  secundaria, en lugar de la poblacion primaria, para actualizar el $pBest$ del algoritmo propuesto.
+  
+  \item La contribuci\'on al hipervolumen es un valor que se basa en la m\'etrica del hipervolumen. Por lo que, resulta ser muy costoso 
+  computacionalmente hablando. Sin embargo, el uso de algoritmos que hacen uso de metodos 
+  de muestreo para calcular la contribuci\'on al hipervolumen resultan ser m\'as eficientes. El uso de HypE 
+  es un algoritmo que utiliza el m\'etodo de Monte Carlo y muestra ser m\'as eficiente al calcular las contribuciones al hipervolumen.
+  
+  \item El uso del algoritmo de HypE para calcular las contribuciones al hipervolumen permite aumentar el n\'umero de generaciones 
+  del algoritmo y el n\'umero de objetivos del problema.
+  
+  \item Debido a que se utiliza una aproximaci\'on de la contribuci\'on al hipervolumen, se decidi\'o utilizar un operador de 
+  turbulencia para evitar quedar atrapado en frentes de Pareto locales.
+  
+  \item Los resultados obtenidos para los primeros tres problemas ZDT son similares. Para el problema ZDT4 es mejor que los resultados 
+  obtenidos por el SMS-EMOA y marginalmente peores que los del NSGA-II. As\'i mismo, nuestros resultados son mejores que los de 
+  MOPSOcd. Para el problema ZDT6 los resultados son ligeramente mejores que los de SMS-EMOA y ligeramente peores que los de NSGA-II, 
+  siendo mucho mejores que los del MOPSOcd.
+  
+  \item Los resultados obtenidos por nuestra propuesta para los problemas DTLZ1, DTLZ3 y DTLZ6 son mejores que los del MOPSOcd.
+  Sin embargo, nuestro algoritmo no pudo obtener buenas aproximaciones al frente de Pareto real, y nuestros resultados fueron dominados
+  por los de SMS-EMOA y NSGA-II. Los resultados para los dem\'as problemas (DTLZ2, DTLZ4, DTLZ5 y DTLZ7) muestran que en la mayoria 
+  de los casos, nuestra propuesta obtiene soluciones que dominan a las de los algoritmos NSGA-II, SMS-EMOA y MOPSOcd.
+  
+  \item Los resultados muestran que en la mayoria de los problemas (2 y 3 objetivos) de nuestra propuesta es competitiva
+  con respecto a los algoritmos NSGA-II, SMS-EMOA y MOPSOcd.
+  
+  \item Nuestro algoritmo mantiene un buen desempe\~no al aumentar el n\'umero de objetivos del problema, manteniendo un costo computacional 
+  razonable. Esto hace que nuestro algoritmo sea competitivo con respecto a los algoritmos NSGA-II, al SMS-EMOA y al MOPSOcd.
+  \end{itemize}
+  
+  \section{Trabajo futuro}
+  
+  Existen diversas formas de poder dise\~nar un algoritmo multi-objetivo con base en la metaheur\'istica de c\'umulos de 
+  part\'iculas, pues es posible usar diferentes tipos de topolog\'ias o conexiones para que las part\'iculas interact\'uen o 
+  influyan entre ellas a fin de para generar buenas aproximaciones hacia frente de Pareto.
+ 
+  En particular se puedr\'ian realizar las siguientes extensiones a nuestro algoritmo:
+  
+  \begin{itemize}
+  \item Utilizar modelos de configuraci\'on diferentes al modelo completo que se us\'o aqu\'i 
+   (modelo cognitivo, modelo social o modelo social exclusivo). 
+  \item Utilizar otros apectos avanzados que pueden acelerar la convergencia del algoritmo (factor de constricci\'on, factor de inercia 
+  adaptable o control de velocidad).
+  
+ \item Seleccionar a los gu\'ias locales de otra manera, de tal forma, que afectan la parte cognitiva del algoritmo permitiendo
+ generar nuevas soluciones.
+ 
+ \item Seleccionar un mejor estimador de densidad para hacer el reemplazo de los soluciones no dominadas en la poblaci\'on secundaria.
+ 
+ \end{itemize}  
+\end{chapter}
