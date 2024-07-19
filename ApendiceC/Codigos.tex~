@@ -1,0 +1,10 @@
+\begin{chapter}{C\'odigos Fuente }
+Escribe el siguiente código en un archivo llamado \texttt{mopsohv.cpp}:
+  \input{ApendiceC/mopsohv}
+  Escribe el siguiente código en un archivo llamado \texttt{test-fun.h}:
+  \input{ApendiceC/test-fun}
+  Escribe el siguiente código en un archivo llamado \texttt{indicadorHype.h}:
+  \input{ApendiceC/indicadorHype}
+  Escribe el siguiente código en un archivo llamado \texttt{randomlib.h}:
+  \input{ApendiceC/randomlib}
+\end{chapter}

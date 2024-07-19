@@ -1,0 +1,5 @@
+\begin{chapter}{C\'odigos Fuente }
+  \input{ApendiceC/test-fun}
+  \input{ApendiceC/indicadorHype}
+  \input{ApendiceC/randomlib}
+\end{chapter}
