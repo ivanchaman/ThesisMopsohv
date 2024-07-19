@@ -1,0 +1,27 @@
+\thispagestyle{empty}
+
+
+\vspace*{\stretch{1}}
+
+Los abajo firmantes, integrantes del jurado para el examen de grado que sustentará el {\bf Sr.\  Iv\'an Christhofer Chaman Garc\'ia}, declaramos que hemos revisado la tesis titulada:\\
+
+\begin{center}
+%\centerline{Uso de un Algoritmo de C\'umulo de Part\'iculas Basado en Hipervolumen para Resolver Problemas Multi-Objetivo}
+\sc  Uso de un Algoritmo de C\'umulo de Part\'iculas Basado en Hipervolumen para Resolver Problemas Multi-Objetivo
+\end{center}
+\vspace{0.5cm}
+
+Y consideramos que cumple con los requisitos para obtener el Grado de Maestría en Ciencias en Computación.\\
+
+ 
+\centerline{Atentamente,}
+\vspace{1.5cm}
+
+\begin{description}
+	\item Nombre del jurado 1
+	\item Nombre del jurado 2
+	\item Nombre del jurado 3
+\end{description}
+
+\vspace*{\stretch{1}}
+
