@@ -1,0 +1,69 @@
+This is BibTeX, Version 0.99c (TeX Live 2009/Debian)
+The top-level auxiliary file: Tesis.aux
+A level-1 auxiliary file: Portada/Portada.aux
+A level-1 auxiliary file: Resumen/Abstract.aux
+A level-1 auxiliary file: Agradecimientos/Agradecimientos.aux
+A level-1 auxiliary file: Cap1/Cap1.aux
+A level-1 auxiliary file: Cap2/Cap2.aux
+A level-1 auxiliary file: Cap3/Cap3.aux
+A level-1 auxiliary file: Cap4/Cap4.aux
+A level-1 auxiliary file: Cap5/Cap5.aux
+The style file: apalike.bst
+Database file #1: biblio.bib.bib
+Name 1 in "Weismann, August," has a comma at the end for entry Weismann93
+while executing---line 1020 of file apalike.bst
+Name 1 in "Weismann, August," has a comma at the end for entry Weismann93
+while executing---line 1020 of file apalike.bst
+Name 1 in "Mendel, Gregor, and Fisher, Ronald A. and Bennett, J. H." has a comma at the end for entry Mendel01
+while executing---line 1020 of file apalike.bst
+Name 1 in "Mendel, Gregor, and Fisher, Ronald A. and Bennett, J. H." has a comma at the end for entry Mendel01
+while executing---line 1020 of file apalike.bst
+Warning--empty booktitle in Everson02fullelite
+Name 1 in "Mendel, Gregor, and Fisher, Ronald A. and Bennett, J. H." has a comma at the end for entry Mendel01
+while executing---line 1095 of file apalike.bst
+Warning--can't use both author and editor fields in Shi_Eberhart_1998
+Warning--can't use both volume and number fields in Shi_Eberhart_1998
+Name 1 in "Weismann, August," has a comma at the end for entry Weismann93
+while executing---line 1095 of file apalike.bst
+You've used 62 entries,
+            1935 wiz_defined-function locations,
+            950 strings with 19171 characters,
+and the built_in function-call counts, 27261 in all, are:
+= -- 2691
+> -- 1016
+< -- 76
++ -- 320
+- -- 319
+* -- 2167
+:= -- 4502
+add.period$ -- 207
+call.type$ -- 62
+change.case$ -- 433
+chr.to.int$ -- 61
+cite$ -- 65
+duplicate$ -- 1183
+empty$ -- 2008
+format.name$ -- 425
+if$ -- 5678
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 69
+newline$ -- 313
+num.names$ -- 217
+pop$ -- 461
+preamble$ -- 1
+purify$ -- 448
+quote$ -- 0
+skip$ -- 921
+stack$ -- 0
+substring$ -- 1872
+swap$ -- 303
+text.length$ -- 37
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 346
+warning$ -- 3
+while$ -- 219
+width$ -- 0
+write$ -- 836
+(There were 6 error messages)

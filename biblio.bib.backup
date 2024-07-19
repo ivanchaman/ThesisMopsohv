@@ -1,0 +1,1103 @@
+%Referencias Capitulo 1
+
+@inproceedings{bdz2008a,
+  author    = {Johannes Bader and
+               Kalyanmoy Deb and
+               Eckart Zitzler},
+  title     = {{F}aster {H}ypervolume-{B}ased {S}earch {U}sing {M}onte {C}arlo {S}ampling},
+  booktitle = {MCDM},
+  year      = {2008},
+  pages     = {313-326},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-04045-0_27},
+  crossref  = {DBLP:conf/mcdm/2008},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/mcdm/2008,
+  editor    = {Matthias Ehrgott and
+               Boris Naujoks and
+               Theodor J. Stewart and
+               Jyrki Wallenius},
+  title     = {Multiple Criteria Decision Making for Sustainable Energy
+               and Transportation Systems - Proceedings of the 19th International
+               Conference on Multiple Criteria Decision Making, Auckland,
+               New Zealand, January 7-12, 2008},
+  booktitle = {MCDM},
+  publisher = {Springer},
+  series    = {Lecture Notes in Economics and Mathematical Systems},
+  volume    = {634},
+  year      = {2010},
+  isbn      = {978-3-642-04044-3},
+  ee        = {http://dx.doi.org/10.1007/978-3-642-04045-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{Bader11,
+  author    = {Johannes Bader and
+               Eckart Zitzler},
+  title     = {{HypE}: {A}n {A}lgorithm for {F}ast {H}ypervolume-{B}ased {M}any-{O}bjective
+               {O}ptimization},
+  journal   = {Evolutionary Computation},
+  volume    = {19},
+  number    = {1},
+  year      = {2011},
+  pages     = {45-76},
+  ee        = {http://dx.doi.org/10.1162/EVCO_a_00009},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{Beume2009,
+  author    = {Nicola Beume},
+  title     = {{S-Metric} {C}alculation by {C}onsidering {D}ominated {H}ypervolume
+               as {K}lee's {M}easure {P}roblem},
+  journal   = {Evolutionary Computation},
+  volume    = {17},
+  number    = {4},
+  year      = {2009},
+  pages     = {477-492},
+  ee        = {http://dx.doi.org/10.1162/evco.2009.17.4.17402},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@Article{Beume07,
+  author={Nicola Beume  and Boris Naujoks  and Michael Emmerich},
+  title={{SMS-EMOA}: {M}ultiobjective {S}election {B}ased on {D}ominated {H}ypervolume},
+  journal={European Journal of Operational Research},
+  year=2007,
+  volume={181},
+  number={3},
+  pages={1653-1669},
+  month={September},
+  keywords={},
+  abstract={No abstract is available for this item.},
+  url={http://ideas.repec.org/a/eee/ejores/v181y2007i3p1653-1669.html}
+}
+
+
+@inproceedings{Braberman07,
+  author    = {V\'{\i}ctor A. Braberman and
+               Jorge Luc{\'a}ngeli Obes and
+               Alfredo Olivero and
+               Fernando Schapachnik},
+  title     = {{H}ypervolume {A}pproximation in {T}imed {A}utomata {M}odel {C}hecking},
+  booktitle = {FORMATS},
+  year      = {2007},
+  pages     = {69-81},
+  ee        = {http://dx.doi.org/10.1007/978-3-540-75454-1_7},
+  crossref  = {DBLP:conf/formats/2007},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/formats/2007,
+  editor    = {Jean-Fran\c{c}ois Raskin and
+               P. S. Thiagarajan},
+  title     = {Formal Modeling and Analysis of Timed Systems, 5th International
+               Conference, FORMATS 2007, Salzburg, Austria, October 3-5,
+               2007, Proceedings},
+  booktitle = {FORMATS},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {4763},
+  year      = {2007},
+  isbn      = {978-3-540-75453-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@inproceedings{Bringmann2,
+  author    = {Karl Bringmann and
+               Tobias Friedrich},
+  title     = {{D}on't be {G}reedy when {C}alculating {H}ypervolume {C}ontributions},
+  booktitle = {FOGA},
+  year      = {2009},
+  pages     = {103-112},
+  ee        = {http://doi.acm.org/10.1145/1527125.1527139},
+  crossref  = {DBLP:conf/foga/2009},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/foga/2009,
+  editor    = {Ivan I. Garibay and
+               Thomas Jansen and
+               R. Paul Wiegand and
+               Annie S. Wu},
+  title     = {Foundations of Genetic Algorithms, 10th ACM SIGEVO International
+               Workshop, FOGA 2009, Orlando, Forida, USA, January 9-11,
+               2009, Proceedings},
+  booktitle = {FOGA},
+  publisher = {ACM},
+  year      = {2009},
+  isbn      = {978-1-60558-414-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+@article{bringmann,
+  author    = {Karl Bringmann and
+               Tobias Friedrich},
+  title     = {{A}n {E}fficient {A}lgorithm for {C}omputing {H}ypervolume {C}ontributions},
+  journal   = {Evolutionary Computation},
+  volume    = {18},
+  number    = {3},
+  year      = {2010},
+  pages     = {383-402},
+  ee        = {http://dx.doi.org/10.1162/EVCO_a_00012},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{clerc99,
+    author = {Clerc, M.},
+    booktitle = {Congress on Evolutionary Computation},
+    citeulike-article-id = {3225417},
+    citeulike-linkout-0 = {http://dx.doi.org/10.1109/CEC.1999.785513},
+    doi = {10.1109/CEC.1999.785513},
+    keywords = {pso},
+    pages = {1951--1957},
+    posted-at = {2008-09-11 14:01:01},
+    priority = {2},
+    title = {{The Swarm and the Queen: Towards a Deterministic and Adaptive Particle Swarm Optimization}},
+    url = {http://dx.doi.org/10.1109/CEC.1999.785513},
+    volume = {3},
+    year = {1999}
+}
+@article{Maurice11,
+  author    = {Maurice Clerc and
+               James Kennedy},
+  title     = {{T}he {P}article {S}warm: {E}xplosion, {S}tability and {C}onvergence
+               in a {M}ultidimensional {C}omplex {S}pace},
+  journal   = {IEEE Trans. Evolutionary Computation},
+  volume    = {6},
+  number    = {1},
+  year      = {2002},
+  pages     = {58-73},
+  ee        = {http://dx.doi.org/10.1109/4235.985692},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@BOOK{EASMC,
+  title = {{Evolutionary Algorithms for Solving Multi-Objective Problems (Genetic
+	and Evolutionary Computation)}},
+  publisher = {Springer-Verlag New York, Inc.},
+  year = {2006},
+  author = {Coello, Carlos A. Coello and Lamont, Gary B. and Veldhuizen, David
+	A. Van},
+  address = {Secaucus, NJ, USA},
+  isbn = {0387332545}
+}
+
+@article{Coello04,
+  author    = {Carlos A. Coello Coello and
+               Gregorio Toscano Pulido and
+               M. Salazar Lechuga},
+  title     = {{Handling Multiple Objectives With Particle Swarm Optimization}},
+  journal   = {IEEE Trans. Evolutionary Computation},
+  volume    = {8},
+  number    = {3},
+  year      = {2004},
+  pages     = {256-279},
+  ee        = {http://dx.doi.org/10.1109/TEVC.2004.826067},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{deb02,
+  author    = {Kalyanmoy Deb and
+               Samir Agrawal and
+               Amrit Pratap and
+               T. Meyarivan},
+  title     = {{A Fast Elitist Non-dominated Sorting Genetic Algorithm for
+               Multi-objective Optimisation: NSGA-II}},
+  booktitle = {PPSN},
+  year      = {2000},
+  pages     = {849-858},
+  ee        = {http://dx.doi.org/10.1007/3-540-45356-3_83},
+  crossref  = {DBLP:conf/ppsn/2000},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/ppsn/2000,
+  editor    = {Marc Schoenauer and
+               Kalyanmoy Deb and
+               G{\"u}nter Rudolph and
+               Xin Yao and
+               Evelyne Lutton and
+               Juan J. Merelo Guerv{\'o}s and
+               Hans-Paul Schwefel},
+  title     = {Parallel Problem Solving from Nature - PPSN VI, 6th International
+               Conference, Paris, France, September 18-20, 2000, Proceedings},
+  booktitle = {PPSN},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1917},
+  year      = {2000},
+  isbn      = {3-540-41056-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@book{Eberhart1996,
+ author = {Eberhart, Russ and Simpson, Pat and Dobbins, Roy},
+ title = {{Computational intelligence PC tools}},
+ year = {1996},
+ isbn = {0-12-228630-8},
+ publisher = {Academic Press Professional, Inc.},
+ address = {San Diego, CA, USA},
+}
+
+@BOOK{JKennedySI,
+  title = {{Swarm Intelligence (The Morgan Kaufmann Series in Evolutionary Computation)}},
+  publisher = {Morgan Kaufmann},
+  year = {2001},
+  author = {Eberhart, Russell C. and Shi, Yuhui and Kennedy, James},
+  edition = {1st},
+  month = april,
+  day = {09},
+  howpublished = {Hardcover},
+  isbn = {1558605959},
+  keywords = {crowds, networks, social},
+  posted-at = {2007-02-02 19:50:15},
+  priority = {3},
+  url = {http://www.worldcat.org/isbn/1558605959}
+}
+
+@inproceedings{Emmerich05anemo,
+  author    = {Michael Emmerich and
+               Nicola Beume and
+               Boris Naujoks},
+  title     = {{An EMO Algorithm Using the Hypervolume Measure as Selection
+               Criterion}},
+  booktitle = {EMO},
+  year      = {2005},
+  pages     = {62-76},
+  ee        = {http://dx.doi.org/10.1007/978-3-540-31880-4_5},
+  crossref  = {DBLP:conf/emo/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/emo/2005,
+  editor    = {Carlos A. Coello Coello and
+               Arturo Hern{\'a}ndez Aguirre and
+               Eckart Zitzler},
+  title     = {Evolutionary Multi-Criterion Optimization, Third International
+               Conference, EMO 2005, Guanajuato, Mexico, March 9-11, 2005,
+               Proceedings},
+  booktitle = {EMO},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {3410},
+  year      = {2005},
+  isbn      = {3-540-24983-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Everson02fullelite,
+    author = {Richard M. Everson and Jonathan E. Fieldsend and Sameer Singh},
+    title = {{Full Elite Sets for Multi-Objective Optimisation}},
+    year = {2002},
+    publisher = {In I. Parmee (Eds.)}, 
+    series  = {Conference on Adaptive Computing in Design and Manufacture}, 
+    pages = {343--354} 
+}
+
+@article{Parallel,
+  author    = {Jui-Fang Chang and
+               Shu-Chuan Chu and
+               John F. Roddick and
+               Jeng-Shyang Pan},
+  title     = {{A Parallel Particle Swarm Optimization Algorithm with Communication
+               Strategies}},
+  journal   = {J. Inf. Sci. Eng.},
+  volume    = {21},
+  number    = {4},
+  year      = {2005},
+  pages     = {809-818},
+  ee        = {http://www.iis.sinica.edu.tw/page/jise/2005/200507_09.html},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@incollection{FonPaqhypervolume,
+  author = { Carlos M. Fonseca  and  Lu{\'i}s Paquete  and  Manuel L{\'o}pez-Ib{\'a}{\~n}ez },
+  title = {{An Improved Dimension\hspace{0pt}-\hspace{0pt}Sweep
+                  Algorithm for the Hypervolume Indicator}},
+  crossref = {CEC2006},
+  pages = {1157--1163},
+  doi = {10.1109/CEC.2006.1688440},
+  pdf = {FonPaqLop06-hypervolume.pdf},
+  abstract = {This paper presents a recursive, dimension-sweep
+                  algorithm for computing the hypervolume indicator of
+                  the quality of a set of $n$ non-dominated points in
+                  $d>2$ dimensions. It improves upon the existing HSO
+                  (Hypervolume by Slicing Objectives) algorithm by
+                  pruning the recursion tree to avoid repeated
+                  dominance checks and the recalculation of partial
+                  hypervolumes. Additionally, it incorporates a recent
+                  result for the three-dimensional special case.  The
+                  proposed algorithm achieves $O(n^{d-2} \log n)$ time
+                  and linear space complexity in the worst-case, but
+                  experimental results show that the pruning
+                  techniques used may reduce the time complexity
+                  exponent even further.}
+}
+
+@book{CEC2006,
+  title = {{Proceedings of the 2006 Congress on Evolutionary
+                  Computation (CEC 2006)}},
+  booktitle = {Proceedings of the 2006 Congress on Evolutionary
+                  Computation (CEC 2006)},
+  year = 2006,
+  month = jul,
+  publisher = {IEEE Press},
+  address = {Piscataway, NJ}
+}
+
+@inproceedings{FuJZ11,
+  author    = {Wenlong Fu and
+               Mark Johnston and
+               Mengjie Zhang},
+  title     = {{Hybrid Particle Swarm Optimisation based on history Information
+               Sharing}},
+  booktitle = {GECCO},
+  year      = {2011},
+  pages     = {77-84},
+  ee        = {http://doi.acm.org/10.1145/2001576.2001588},
+  crossref  = {DBLP:conf/gecco/201},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/gecco/201,
+  editor    = {Natalio Krasnogor and
+               Pier Luca Lanzi},
+  title     = {13th Annual Genetic and Evolutionary Computation Conference,
+               GECCO 2011, Proceedings, Dublin, Ireland, July 12-16, 2011},
+  booktitle = {GECCO},
+  publisher = {ACM},
+  year      = {2011},
+  isbn      = {978-1-4503-0557-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{Hu02multiobjectiveoptimization,
+  author = {Xiaohui Hu and R. Eberhart},
+  title = {{Multiobjective Optimization Using Dynamic Neighborhood Particle Swarm Optimization}},
+  journal ={Computational Intelligence, Proceedings of the World on Congress on},
+  volume = {2},
+  isbn = {0-7803-7282-4},
+  year = {2002},
+  pages = {1677-1681},
+  doi = {http://doi.ieeecomputersociety.org/10.1109/CEC.2002.1004494},
+  publisher = {IEEE Computer Society},
+  address = {Los Alamitos, CA, USA},
+ }
+ 
+ @INPROCEEDINGS{Hu03particleswarm,
+  author={Xiaohui Hu and Eberhart, R.C. and Yuhui Shi},
+  booktitle={Swarm Intelligence Symposium, 2003. SIS '03. Proceedings of the 2003 IEEE}, 
+  title={{Particle Swarm with Extended Memory for Multiobjective Optimization}},
+  year={2003},
+  month={april},
+  volume={},
+  number={},
+  pages={ 193 - 197},
+  keywords={ DNPSO algorithm; computation time; dynamic neighborhood particle swarm optimization; extended memory; global Pareto optimal solutions; multiobjective optimization problems; one-dimension optimization; particle memory updating; Pareto optimisation; evolutionary computation; search problems;},
+  doi={10.1109/SIS.2003.1202267},
+  }
+
+@INPROCEEDINGS{JKennedy11,
+  author = {James {Kennedy}},
+  title = {{The Particle Swarm: Social Adaptation of Knowledge}},
+  booktitle = {Proceedings of IEEE International Conference on Evolutionary Computation},
+  year = {1997},
+  pages = {303--308},
+  abstract = {{Particle swarm adaptation is an optimization paradigm that simulates
+	the ability of human societies to process knowledge. The algorithm
+	models the exploration of a problem space by a population of individuals;
+	individuals' successes influence their searches and those of their
+	peers. The algorithm is relevant to cognition, in particular the
+	representation of schematic knowledge in neural networks. Particle
+	swarm optimization successfully optimizes network weights, simulating
+	the adaptive sharing of representations among social collaborators.
+	The paper introduces the algorithm, begins to develop a social science
+	context for it, and explores some aspects of its functioning}},
+  citeulike-article-id = {6592155},
+  citeulike-linkout-0 = {http://dx.doi.org/10.1109/ICEC.1997.592326},
+  doi = {10.1109/ICEC.1997.592326},
+  keywords = {file-import-10-01-27},
+  location = {Indianapolis, IN},
+  posted-at = {2010-01-27 00:32:39},
+  priority = {2},
+  url = {http://dx.doi.org/10.1109/ICEC.1997.592326}
+}
+
+@ARTICLE{JKRBParticle,
+  author = {Kennedy, James and Eberhart,  Russell},
+  title = {{Particle Swarm Optimization}},
+  journal = {IEEE International Conference on Neural Networks. Proceedings.},
+  year = {1995},
+  volume = {4},
+  pages = {1942--1948 vol.4},
+  month = nov,
+  abstract = {{A concept for the optimization of nonlinear functions using particle
+	swarm methodology is introduced. The evolution of several paradigms
+	is outlined, and an implementation of one of the paradigms is discussed.
+	Benchmark testing of the paradigm is described, and applications,
+	including nonlinear function optimization and neural network training,
+	are proposed. The relationships between particle swarm optimization
+	and both artificial life and genetic algorithms are described}},
+  booktitle = {Neural Networks, 1995. Proceedings., IEEE International Conference
+	on},
+  day = {06},
+  isbn = {0-7803-2768-3},
+  keywords = {algorithm, optimization, particle-swarm, stochastic},
+  location = {Perth, WA, Australia},
+  posted-at = {2008-05-10 09:02:20},
+  priority = {0},
+  publisher = {IEEE},
+  url = {http://dx.doi.org/10.1109/ICNN.1995.488968}
+}
+
+@ARTICLE{JKRBPaM,
+  author = {Kennedy, James and Mendes, R.},
+  title = {{Neighborhood topologies in fully informed and Best of Neighborhood
+	Particle Swarms}},
+  journal = {IEEE Transactions on Systems, Man, and Cybernetics, Part C: Applications
+	and Reviews.},
+  year = {2006},
+  volume = {36},
+  pages = {515--519},
+  number = {4},
+  abstract = {{In this study, we vary the way an individual in the particle swarm
+	interacts with its neighbors. The performance of an individual depends
+	on population topology as well as algorithm version. It appears that
+	a fully informed particle swarm is more susceptible to alterations
+	in the topology, but with a good topology, it can outperform the
+	canonical version.}},
+  booktitle = {Systems, Man, and Cybernetics, Part C: Applications and Reviews,
+	IEEE Transactions on},
+  citeulike-article-id = {3388357},
+  citeulike-linkout-0 = {http://dx.doi.org/10.1109/TSMCC.2006.875410},
+  citeulike-linkout-1 = {http://ieeexplore.ieee.org/xpls/abs_all.jsp?arnumber=1643842},
+  doi = {10.1109/TSMCC.2006.875410},
+  keywords = {pso},
+  posted-at = {2008-10-27 11:55:24},
+  priority = {2},
+  url = {http://dx.doi.org/10.1109/TSMCC.2006.875410}
+}
+
+@inproceedings{Salazar05a,
+  author    = {M. Salazar Lechuga and
+               J. E. Rowe},
+  title     = {{Particle Swarm Optimization and Fitness Sharing to Solve
+               Multiobjective Optimization Problems}},
+  booktitle = {Congress on Evolutionary Computation},
+  year      = {2005},
+  pages     = {1204-1211},
+  ee        = {http://dx.doi.org/10.1109/CEC.2005.1554827},
+  crossref  = {DBLP:conf/cec/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/cec/2005,
+  title     = {Proceedings of the IEEE Congress on Evolutionary Computation,
+               CEC 2005, 2-4 September 2005, Edinburgh, UK},
+  booktitle = {IEEE Congress on Evolutionary Computation},
+  publisher = {IEEE},
+  year      = {2005},
+  isbn      = {0-7803-9363-5},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{MartinezC11,
+  author    = {Sa{\'u}l Zapotecas Mart\'{\i}nez and Carlos A. Coello Coello},
+  title     = {{A Multi-objective Particle Swarm Optimizer Based on Decomposition}},
+  booktitle = {GECCO},
+  year      = {2011},
+  pages     = {69-76},
+  crossref  = {DBLP:conf/gecco/20},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/gecco/20,
+  editor    = {Natalio Krasnogor and Pier Luca Lanzi},
+  title     = {13th Annual Genetic and Evolutionary Computation Conference,
+               GECCO 2011, Proceedings, Dublin, Ireland, July 12-16, 2011},
+  booktitle = {GECCO},
+  publisher = {ACM},
+  year      = {2011},
+  isbn      = {978-1-4503-0557-0}
+}
+
+@INPROCEEDINGS{Mostaghim04coveringpareto-optimal,
+       AUTHOR             = {S.~Mostaghim and J.~Teich},
+       ADDRESS            = {Portland, USA},
+       BOOKTITLE          = {IEEE Proceedings, World Congress on Computational Intelligence {(CEC'04)}},
+       MONTH              = {June},
+       PAGES              = {1404--1411},
+       TITLE              = {{Covering Pareto-optimal Fronts by Subswarms in Multi-objective Particle Swarm Optimization}},
+       YEAR               = {2004}
+} 
+
+@inproceedings{Mostaghim7,
+  author    = {Sanaz Mostaghim and
+               J{\"u}rgen Branke and
+               Hartmut Schmeck},
+  title     = {{Multiobjective Particle Swarm Optimization on Computer Grids}},
+  booktitle = {GECCO},
+  year      = {2007},
+  pages     = {869-875},
+  ee        = {http://doi.acm.org/10.1145/1276958.1277127},
+  crossref  = {DBLP:conf/gecco/2007},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/gecco/2007,
+  editor    = {Hod Lipson},
+  title     = {Genetic and Evolutionary Computation Conference, GECCO 2007,
+               Proceedings, London, England, UK, July 7-11, 2007},
+  booktitle = {GECCO},
+  publisher = {ACM},
+  year      = {2007},
+  isbn      = {978-1-59593-697-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{BeuFon2009,
+  author    = {Nicola Beume and
+               Carlos M. Fonseca and
+               Manuel L{\'o}pez-Ib{\'a}{\~n}ez and
+               Lu\'{\i}s Paquete and
+               Jan Vahrenhold},
+  title     = {{On the Complexity of Computing the Hypervolume Indicator}},
+  journal   = {IEEE Trans. Evolutionary Computation},
+  volume    = {13},
+  number    = {5},
+  year      = {2009},
+  pages     = {1075-1082},
+  ee        = {http://dx.doi.org/10.1109/TEVC.2009.2015575},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@BOOK{EASMC85,
+  title = {{Multicriterion Optimization in Engineering with FORTRAN Programs}},
+  publisher = {Academic Press},
+  year = {1985},
+  author = {Andrzej Osyczka},
+   pages = {193–227},
+  isbn = {0853124817, 9780853124818}
+}
+
+@inproceedings{Nik11,
+  author    = {Nikhil Padhye},
+  title     = {{Comparison of Archiving Methods in Multiobjective {P}article
+               {S}warm {O}ptimization (MOPSO): {E}mpirical {S}tudy}},
+  booktitle = {GECCO},
+  year      = {2009},
+  pages     = {1755-1756},
+  ee        = {http://doi.acm.org/10.1145/1569901.1570143},
+  crossref  = {DBLP:conf/gecco/2009g},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/gecco/2009g,
+  editor    = {Franz Rothlauf},
+  title     = {Genetic and Evolutionary Computation Conference, GECCO 2009,
+               Proceedings, Montreal, Qu{\'e}bec, Canada, July 8-12,
+               2009},
+  booktitle = {GECCO},
+  publisher = {ACM},
+  year      = {2009},
+  isbn      = {978-1-60558-325-9},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Parsopoulos02particleswarm,
+  author    = {Konstantinos E. Parsopoulos and
+               Michael N. Vrahatis},
+  title     = {{Particle Swarm Optimization Method in Multiobjective Problems}},
+  booktitle = {SAC},
+  year      = {2002},
+  pages     = {603-607},
+  ee        = {http://doi.acm.org/10.1145/508791.508907},
+  crossref  = {DBLP:conf/sac/2002},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/sac/2002,
+  title     = {Proceedings of the 2002 ACM Symposium on Applied Computing
+               (SAC), March 10-14, 2002, Madrid, Spain},
+  publisher = {ACM},
+  year      = {2002},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Raquel2005,
+  author    = {Carlo R. Raquel and
+               Prospero C. Naval Jr.},
+  title     = {{An Effective use of Crowding Distance in Multiobjective
+               Particle Swarm Optimization}},
+  booktitle = {GECCO},
+  year      = {2005},
+  pages     = {257-264},
+  ee        = {http://doi.acm.org/10.1145/1068009.1068047},
+  crossref  = {DBLP:conf/gecco/2005},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/gecco/2005,
+  editor    = {Hans-Georg Beyer and
+               Una-May O'Reilly},
+  title     = {Genetic and Evolutionary Computation Conference, GECCO 2005,
+               Proceedings, Washington DC, USA, June 25-29, 2005},
+  booktitle = {GECCO},
+  publisher = {ACM},
+  year      = {2005},
+  isbn      = {1-59593-010-8},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@MASTERSTHESIS{Edgar01,
+  author = {Edgar Reehuis},
+  title = {{Multiobjective Robust Optimization of Water Distribution Networks}},
+  school = {Leiden Institute of Advanced Computer Science},
+  year = {2010},
+  address = {Leiden University, The Netherlands},
+}
+
+@ARTICLE{Margarita01,
+  author = {Margarita {Reyes Sierra} and Carlos A. {Coello Coello}},
+  title = {{Multi-Objective Particle Swarm Optimizers: A Survey of the State
+	of the Art}},
+  journal = {International Journal of Computational Intelligence Research},
+  year = {2006},
+  volume = {2},
+  pages = {287--308},
+  number = {3}
+}
+
+@MASTERSTHESIS{Cynthia01,
+  author = {Cynthia A. {Rodr{\'i}guez Villalobos}},
+  title = {{A New Multiobjective Evolutionary Algorithm Based on a Performance
+	Assessment Indicator}},
+  school = {Centro de Investigaci{\'o}n y de Estudios Avanzados del Instituto
+	Polit{\'e}cnico Nacional},
+  year = {2011},
+  address = {campus Zacatenco, Departamento de Ciencias de la Computaci{\'o}n,
+	D.F, M{\'e}xico},
+  month = {Sep}
+}
+
+@article{citeulike33,
+    author = {Shi, Y. and Eberhart, R.},
+    booktitle = {Evolutionary Computation Proceedings, 1998. IEEE World Congress on Computational Intelligence., The 1998 IEEE International Conference on},
+    doi = {10.1109/ICEC.1998.699146},
+    isbn = {0-7803-4869-9},
+    journal = {Evolutionary Computation Proceedings, 1998. IEEE World Congress on Computational Intelligence., 
+    The 1998 IEEE International Conference on},
+    keywords = {03, 98, inertia-weight, particle-swarm-optimization, pso},
+    month = {may},
+    pages = {69--73},
+    posted-at = {2008-02-01 19:40:34},
+    priority = {0},
+    publisher = {IEEE},
+    title = {{A Modified Particle Swarm Optimizer}},
+    url = {http://dx.doi.org/10.1109/ICEC.1998.699146},
+    year = {1998}
+}
+
+@book{Shi_Eberhart_1998, 
+  title={{Parameter Selection in Particle Swarm Optimization}}, 
+  volume={160}, 
+  url={http://www.springerlink.com/index/h461r7100038226p.pdf}, 
+  number={4}, 
+  booktitle={Evolutionary Programming VII}, 
+  publisher={Springer}, 
+  author={Shi, Yuhui and Eberhart, Russell C}, 
+  editor={Porto, V W and Saravanan, N and Waagen, D and Eiben, A EEditors}, 
+  year={1998}, 
+  pages={591--600}
+  }
+  
+  @techreport{Veldhuizen98,
+   author = {David A. Van Veldhuizen and Gary B. Lamont},
+   address = {Wright-Patterson AFB, Ohio},
+   institution = {Department of Electrical and Computer Engineering, Graduate
+School of Engineering, Air Force Institute of Technology},
+   key = {Van Veldhuizen and Lamont, 1998},
+   number = {TR-98-03},
+   title = {{Multiobjective Evolutionary Algorithm Research: A History and Analysis}},
+   year = {1998}
+}
+
+@article{YangNovel,
+  added-at = {2011-12-05T00:00:00.000+0100},
+  author = {Yang, Qing and Ding, Shengchao},
+  biburl = {http://www.bibsonomy.org/bibtex/22c5b8b0f38bc50d9e538e300e1ca67ce/dblp},
+  ee = {http://arxiv.org/abs/0704.1196},
+  interhash = {b50df29c8c62ea874bcdaca5d6c3241b},
+  intrahash = {2c5b8b0f38bc50d9e538e300e1ca67ce},
+  journal = {CoRR},
+  keywords = {dblp},
+  timestamp = {2011-12-05T00:00:00.000+0100},
+  title = {{Novel Algorithm to Calculate Hypervolume Indicator of Pareto Approximation Set}},
+  url = {http://dblp.uni-trier.de/db/journals/corr/corr0704.html#abs-0704-1196},
+  volume = {abs/0704.1196},
+  year = 2007
+}
+
+@BOOK{YanNSA,
+  title = {{Nature-Inspired Metaheuristic Algorithms}},
+  publisher = {Luniver Press},
+  year = {2008},
+  author = {Xin-She Yang },
+  isbn = {1905986106, 9781905986101}
+}
+
+@inproceedings{zbt2006,
+  author    = {Eckart Zitzler and
+               Dimo Brockhoff and
+               Lothar Thiele},
+  title     = {{The Hypervolume Indicator Revisited: On the Design of Pareto-compliant
+               Indicators Via Weighted Integration}},
+  booktitle = {EMO},
+  year      = {2006},
+  pages     = {862-876},
+  ee        = {http://dx.doi.org/10.1007/978-3-540-70928-2_64},
+  crossref  = {DBLP:conf/emo/2006},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/emo/2006,
+  editor    = {Shigeru Obayashi and
+               Kalyanmoy Deb and
+               Carlo Poloni and
+               Tomoyuki Hiroyasu and
+               Tadahiko Murata},
+  title     = {Evolutionary Multi-Criterion Optimization, 4th International
+               Conference, EMO 2007, Matsushima, Japan, March 5-8, 2007,
+               Proceedings},
+  booktitle = {EMO},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {4403},
+  year      = {2007},
+  isbn      = {3-540-70927-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+
+@article{Zitzler2000,
+  author    = {Eckart Zitzler and
+               Kalyanmoy Deb and
+               Lothar Thiele},
+  title     = {{Comparison of Multiobjective Evolutionary Algorithms: Empirical
+               Results}},
+  journal   = {Evolutionary Computation},
+  volume    = {8},
+  number    = {2},
+  year      = {2000},
+  pages     = {173-195},
+  ee        = {http://dx.doi.org/10.1162/106365600568202},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Zitzler98on,
+  author    = {Eckart Zitzler and
+               Lothar Thiele},
+  title     = {{Multiobjective Optimization Using Evolutionary Algorithms: A Comparative Case Study}},
+  booktitle = {PPSN},
+  year      = {1998},
+  pages     = {292-304},
+  ee        = {http://dx.doi.org/10.1007/BFb0056872},
+  crossref  = {DBLP:conf/ppsn/1998},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/ppsn/1998,
+  editor    = {A. E. Eiben and
+               Thomas B{\"a}ck and
+               Marc Schoenauer and
+               Hans-Paul Schwefel},
+  title     = {Parallel Problem Solving from Nature - PPSN V, 5th International
+               Conference, Amsterdam, The Netherlands, September 27-30,
+               1998, Proceedings},
+  booktitle = {PPSN},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {1498},
+  year      = {1998},
+  isbn      = {3-540-65078-4},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@book{darwin59,
+title = {{The origin of species by means of natural selection by Means of Natural Selection, or
+The Preservation of Struggle for Life}},
+url = {http://www.biodiversitylibrary.org/item/18399},
+note = {http://www.biodiversitylibrary.org/bibliography/2106},
+publisher = {Penguin Book Ltd. New York :Hurst,},
+author = {Charles Darwin},
+year = {1959},
+keywords = {Evolution Natural selection},
+}
+
+@Book{  Weismann93,
+author = { Weismann, August, },
+title = {{ The germ-plasm : a theory of heredity / by A. Weismann ; translated by W. Newton Parker and H. Ronnfeldt }},
+publisher = { W. Scott, London : },
+pages = { xxiii, 477 p. : },
+year = { 1893 },
+type = { Book },
+language = { English },
+subjects = { Genetics. },
+life-dates = { 1894 -  },
+catalogue-url = { http://nla.gov.au/nla.cat-vn1107712 },
+}
+
+@Book{Mendel01,
+author = { Mendel, Gregor, and Fisher, Ronald A. and Bennett, J. H. },
+title = {{ Experiments in plant hybridisation: Mendel's original paper in English translation, with commentary and assessment by the late Sir Ronald A. Fisher, together with a reprint of W. Bateson's biographical notice of Mendel / Gregor Mendel ; edited by J.H. Bennett }},
+publisher = { Oliver and Boyd, Edinburgh},
+pages = { ix, 95 p. },
+year = { 1965 },
+type = { Book },
+language = { English },
+subjects = { Plant genetics.; Plant hybridization. },
+life-dates = { 1965 -  },
+catalogue-url = { http://nla.gov.au/nla.cat-vn2189557 },
+}
+
+@book{Back97,
+    author = {B{\"{a}}ck, T. and Fogel, D. and Michalewicz, Z.},
+    citeulike-article-id = {2606499},
+    keywords = {bibtex-import, tesinagema},
+    posted-at = {2008-03-28 13:40:50},
+    priority = {2},
+    publisher = {Oxford Univ. Press},
+    title = {{Handbook of Evolutionary Computation}},
+    year = {1997}
+}
+
+@book{Fogel64,
+  title={{On the Organization of Intellect}},
+  author={Fogel, L.J.},
+  url={http://books.google.com.mx/books?id=BoKftwAACAAJ},
+  year={1964},
+  publisher={University of California, Los Angeles - Engineering}
+}
+
+@book{Holland75,
+ author = {Holland, John H.},
+ title = {{Adaptation in Natural and Artificial Systems}},
+ year = {1992},
+ isbn = {0-262-58111-6},
+ publisher = {MIT Press},
+ address = {Cambridge, MA, USA},
+} 
+
+@book{Miettinen98,
+author={Miettinen, K.},
+title={{Nonlinear Multiobjective Optimization}},
+series={International Series in Operations Research and Management Science},
+volume=12,
+publisher={Kluwer Academic Publishers, Dordrecht},
+year=1999 
+}
+
+@phdthesis{Rosenberg67,
+  added-at = {2008-12-11T10:57:36.000+0100},
+  author = {Rosenberg, R.S.},
+  biburl = {http://www.bibsonomy.org/bibtex/2e5bf3ced9a3b24bf01fbb0addd647bff/admase},
+  description = {Bibliografi­a multiples instancias},
+  keywords = {multi-instancia},
+  school = {Univ. Michigan},
+  timestamp = {2008-12-11T10:57:36.000+0100},
+  title = {{Simulation of Genetic Populations with Biochemical Properties}},
+  year = 1967
+}
+
+@inproceedings{Schaffer84,
+  author    = {J. David Schaffer},
+  title     = {{Multiple Objective Optimization with Vector Evaluated Genetic Algorithms}},
+  booktitle = {ICGA},
+  year      = {1985},
+  pages     = {93-100},
+  crossref  = {DBLP:conf/icga/1985},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/icga/1985,
+  editor    = {John J. Grefenstette},
+  title     = {Proceedings of the 1st International Conference on Genetic
+               Algorithms, Pittsburgh, PA, USA, July 1985},
+  booktitle = {ICGA},
+  publisher = {Lawrence Erlbaum Associates},
+  year      = {1985},
+  isbn      = {0-8058-0426-9},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@PhDThesis{zitz1999a,
+author = {E. Zitzler},
+title = {{Evolutionary Algorithms for Multiobjective Optimization: Methods and Applications}},
+school = {ETH Zurich, Switzerland},
+year = {1999},
+publisher = {Shaker Verlag} 
+}
+
+@PhDThesis{zitz1999a,
+author = {Cagnina, Leticia Cecilia},
+title = {{Optimizaci{\'{o}}n Mono y Multiobjetivo a trav{\'{e}}s de una Heur{\'{i}}stica de Interligencia Colectiva}},
+school = {Universidad Nacional de San Luis},
+year = {2010},
+}
+
+@article{Zitzler99,
+  author    = {Eckart Zitzler and
+               Lothar Thiele},
+  title     = {{Multiobjective Evolutionary Algorithms: a Comparative Case
+               Study and the Strength Pareto Approach}},
+  journal   = {IEEE Trans. Evolutionary Computation},
+  volume    = {3},
+  number    = {4},
+  year      = {1999},
+  pages     = {257-271},
+  ee        = {http://dx.doi.org/10.1109/4235.797969},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Fonseca93,
+  author    = {Carlos M. Fonseca and
+               Peter J. Fleming},
+  title     = {Genetic Algorithms for Multiobjective Optimization: FormulationDiscussion
+               and Generalization},
+  booktitle = {ICGA},
+  year      = {1993},
+  pages     = {416-423},
+  crossref  = {DBLP:conf/icga/1993},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/icga/1993,
+  editor    = {Stephanie Forrest},
+  title     = {Proceedings of the 5th International Conference on Genetic
+               Algorithms, Urbana-Champaign, IL, USA, June 1993},
+  booktitle = {ICGA},
+  publisher = {Morgan Kaufmann},
+  year      = {1993},
+  isbn      = {1-55860-299-2},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@article{Srinivas94,
+  author    = {N. Srinivas and
+               Kalyanmoy Deb},
+  title     = {Multiobjective Optimization Using Nondominated Sorting in
+               Genetic Algorithms},
+  journal   = {Evolutionary Computation},
+  volume    = {2},
+  number    = {3},
+  year      = {1994},
+  pages     = {221-248},
+  ee        = {http://dx.doi.org/10.1162/evco.1994.2.3.221},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{Horn94,
+  author    = {Jeffrey Horn and
+               Nicholas Nafpliotis and
+               David E. Goldberg},
+  title     = {A Niched Pareto Genetic Algorithm for Multiobjective Optimization},
+  booktitle = {International Conference on Evolutionary Computation},
+  year      = {1994},
+  pages     = {82-87},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@inproceedings{BringmannF08,
+  author    = {Karl Bringmann and
+               Tobias Friedrich},
+  title     = {Approximating the Volume of Unions and Intersections of
+               High-Dimensional Geometric Objects},
+  booktitle = {ISAAC},
+  year      = {2008},
+  pages     = {436-447},
+  ee        = {http://dx.doi.org/10.1007/978-3-540-92182-0_40},
+  crossref  = {DBLP:conf/isaac/2008},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@proceedings{DBLP:conf/isaac/2008,
+  editor    = {Seok-Hee Hong and
+               Hiroshi Nagamochi and
+               Takuro Fukunaga},
+  title     = {Algorithms and Computation, 19th International Symposium,
+               ISAAC 2008, Gold Coast, Australia, December 15-17, 2008.
+               Proceedings},
+  booktitle = {ISAAC},
+  publisher = {Springer},
+  series    = {Lecture Notes in Computer Science},
+  volume    = {5369},
+  year      = {2008},
+  isbn      = {978-3-540-92181-3},
+  ee        = {http://dx.doi.org/10.1007/978-3-540-92182-0},
+  bibsource = {DBLP, http://dblp.uni-trier.de}
+}
+
+@InProceedings{dtlz2002a,
+author = {K. Deb and L. Thiele and M. Laumanns and E. Zitzler},
+title = {{Scalable Multi-Objective Optimization Test Problems}},
+booktitle = {Congress on Evolutionary Computation (CEC 2002)},
+year = {2002},
+pages = {825--830},
+publisher = {IEEE Press} 
+}
+
+@article{vicente06,
+  author    = {Santana Quintero, Luis Vicente and Coello Coello, Carlos A.},
+  title     = {{Una introducci{\'{o}}n a la Computaci{\'{o}}n Evolutiva y Algunas de sus Aplicaciones en Econom{\'{i}}a y Finanzas}},
+  journal   = {{Revista de M{\'{e}}todos Cuantitativos para la Econom{\'{i}}a y la Empresa}},
+  volume    = {2},
+  year      = {2006},
+  pages     = {3--26},
+  
+}
+
+@InProceedings{zlt2002a,
+author = {E. Zitzler and M. Laumanns and L. Thiele},
+title = {{SPEA2: Improving the Strength Pareto Evolutionary Algorithm for Multiobjective Optimization}},
+booktitle = {Evolutionary Methods for Design, Optimisation and Control with Application to Industrial Problems (EUROGEN 2001)},
+pages = {95--100},
+year = {2002},
+editor = {K.C. Giannakoglou and others},
+publisher = {International Center for Numerical Methods in Engineering (CIMNE)} 
+}
+
+@proceedings{paes99,
+    abstract = {{Most popular evolutionary algorithms for multiobjective optimisation maintain a population of solutions from which individuals are selected for reproduction. In this paper, we introduce a simpler evolution scheme for multiobjective problems, called the Pareto Archived Evolution Strategy (PAES). We argue that PAES may represent the simplest possible non-trivial algorithm capable of generating diverse solutions in the Pareto optimal set. The algorithm is identified as being a (1 + 1) evolution...}},
+    address = {Mayflower Hotel, Washington D.C., USA},
+    author = {Knowles, Joshua and Corne, David},
+    booktitle = {Proceedings of the Congress on Evolutionary Computation},
+    citeulike-article-id = {1201},
+    citeulike-linkout-0 = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.2856},
+    editor = {Angeline, Peter J. and Michalewicz, Zbyszek and Schoenauer, Marc and Yao, Xin and Zalzala, Ali},
+    keywords = {algorithm, genetic, pareto},
+    month = {Jun-Sep},
+    pages = {98--105},
+    posted-at = {2005-01-18 13:48:26},
+    priority = {4},
+    publisher = {IEEE Press},
+    title = {{The Pareto Archived Evolution Strategy: A New Baseline Algorithm for Pareto Multiobjective Optimisation}},
+    url = {http://citeseerx.ist.psu.edu/viewdoc/summary?doi=10.1.1.42.2856},
+    volume = {1},
+    year = {1999}
+}
+
+@article {hoffman89,
+author = {Hoffman, Antoni},
+title = {{Arguments on evolution. A paleontologist's perspective}},
+journal = {American Journal of Physical Anthropology, Oxford University Press USA},
+volume = {80},
+number = {3},
+publisher = {Wiley Subscription Services, Inc., A Wiley Company},
+issn = {1096-8644},
+url = {http://dx.doi.org/10.1002/ajpa.1330800315},
+doi = {10.1002/ajpa.1330800315},
+pages = {405--406},
+year = {1989},
+}
+% By  New York: . 1989. xiii + 274 pp., references, index. $29.95 (cloth)

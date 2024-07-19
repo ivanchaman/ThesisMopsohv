@@ -1,0 +1,1008 @@
+This is pdfTeX, Version 3.1415926-1.40.10 (TeX Live 2009/Debian) (format=latex 2012.9.16)  30 SEP 2012 18:50
+entering extended mode
+ %&-line parsing enabled.
+**Tesis.tex
+(./Tesis.tex
+LaTeX2e <2009/09/24>
+Babel <v3.8l> and hyphenation patterns for english, usenglishmax, dumylang, noh
+yphenation, farsi, arabic, croatian, bulgarian, ukrainian, russian, czech, slov
+ak, danish, dutch, finnish, french, basque, ngerman, german, german-x-2009-06-1
+9, ngerman-x-2009-06-19, ibycus, monogreek, greek, ancientgreek, hungarian, san
+skrit, italian, latin, latvian, lithuanian, mongolian2a, mongolian, bokmal, nyn
+orsk, romanian, irish, coptic, serbian, turkish, welsh, esperanto, uppersorbian
+, estonian, indonesian, interlingua, icelandic, kurmanji, slovenian, polish, po
+rtuguese, spanish, galician, catalan, swedish, ukenglish, pinyin, loaded.
+(/usr/share/texmf-texlive/tex/latex/base/book.cls
+Document Class: book 2007/10/19 v1.4h Standard LaTeX document class
+(/usr/share/texmf-texlive/tex/latex/base/bk11.clo
+File: bk11.clo 2007/10/19 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+)
+(/var/lib/texmf/tex/generic/babel/babel.sty
+Package: babel 2008/07/06 v3.8l The Babel package
+
+(/usr/share/texmf-texlive/tex/generic/babel/spanish.ldf
+Language: spanish.ldf 2009/01/02 v5.0h Spanish support from the babel system
+
+(/usr/share/texmf-texlive/tex/generic/babel/babel.def
+File: babel.def 2008/07/06 v3.8l Babel common definitions
+\babel@savecnt=\count88
+\U@D=\dimen103
+)
+\es@datefmt=\count89
+\es@quottoks=\toks14
+\es@quotdepth=\count90
+Package babel Info: Making " an active character on input line 492.
+Package babel Info: Making . an active character on input line 585.
+Package babel Info: Making < an active character on input line 630.
+Package babel Info: Making > an active character on input line 630.
+))
+(/usr/share/texmf-texlive/tex/latex/base/inputenc.sty
+Package: inputenc 2008/03/30 v1.1d Input encoding file
+\inpenc@prehook=\toks15
+\inpenc@posthook=\toks16
+
+(/usr/share/texmf-texlive/tex/latex/base/latin1.def
+File: latin1.def 2008/03/30 v1.1d Input encoding file
+))
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amssymb.sty
+Package: amssymb 2009/06/22 v3.00
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2009/06/22 v3.00 Basic AMSFonts support
+\@emptytoks=\toks17
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 96.
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2000/07/18 v2.13 AMS math features
+\@mathmargin=\skip43
+
+For additional information on amsmath, use the `?' option.
+(/usr/share/texmf-texlive/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01
+
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0
+\@emptytoks=\toks18
+\ex@=\dimen104
+))
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d
+\pmbraise@=\dimen105
+)
+(/usr/share/texmf-texlive/tex/latex/amsmath/amsopn.sty
+Package: amsopn 1999/12/14 v2.01 operator names
+)
+\inf@bad=\count91
+LaTeX Info: Redefining \frac on input line 211.
+\uproot@=\count92
+\leftroot@=\count93
+LaTeX Info: Redefining \overline on input line 307.
+\classnum@=\count94
+\DOTSCASE@=\count95
+LaTeX Info: Redefining \ldots on input line 379.
+LaTeX Info: Redefining \dots on input line 382.
+LaTeX Info: Redefining \cdots on input line 467.
+\Mathstrutbox@=\box26
+\strutbox@=\box27
+\big@size=\dimen106
+LaTeX Font Info:    Redeclaring font encoding OML on input line 567.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 568.
+\macc@depth=\count96
+\c@MaxMatrixCols=\count97
+\dotsspace@=\muskip10
+\c@parentequation=\count98
+\dspbrk@lvl=\count99
+\tag@help=\toks19
+\row@=\count100
+\column@=\count101
+\maxfields@=\count102
+\andhelp@=\toks20
+\eqnshift@=\dimen107
+\alignsep@=\dimen108
+\tagshift@=\dimen109
+\tagwidth@=\dimen110
+\totwidth@=\dimen111
+\lineht@=\dimen112
+\@envbody=\toks21
+\multlinegap=\skip44
+\multlinetaggap=\skip45
+\mathdisplay@stack=\toks22
+LaTeX Info: Redefining \[ on input line 2666.
+LaTeX Info: Redefining \] on input line 2667.
+)
+(/usr/share/texmf-texlive/tex/latex/amscls/amsthm.sty
+Package: amsthm 2004/08/06 v2.20
+\thm@style=\toks23
+\thm@bodyfont=\toks24
+\thm@headfont=\toks25
+\thm@notefont=\toks26
+\thm@headpunct=\toks27
+\thm@preskip=\skip46
+\thm@postskip=\skip47
+\thm@headsep=\skip48
+\dth@everypar=\toks28
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphicx.sty
+Package: graphicx 1999/02/16 v1.0f Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/keyval.sty
+Package: keyval 1999/03/16 v1.13 key=value parser (DPC)
+\KV@toks@=\toks29
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/graphics.sty
+Package: graphics 2009/02/05 v1.0o Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texmf-texlive/tex/latex/graphics/trig.sty
+Package: trig 1999/03/16 v1.09 sin cos tan (DPC)
+)
+(/etc/texmf/tex/latex/config/graphics.cfg
+File: graphics.cfg 2009/08/28 v1.8 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: dvips.def on input line 91.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvips.def
+File: dvips.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+\Gin@req@height=\dimen113
+\Gin@req@width=\dimen114
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/color.sty
+Package: color 2005/11/14 v1.0j Standard LaTeX Color (DPC)
+
+(/etc/texmf/tex/latex/config/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package color Info: Driver file: dvips.def on input line 130.
+
+(/usr/share/texmf-texlive/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 1999/02/16 v3.0i Driver-dependant file (DPC,SPQR)
+))
+(/usr/share/texmf-texlive/tex/latex/algorithms/algorithm.sty
+Package: algorithm 2009/08/24 v0.1 Document Style `algorithm' - floating enviro
+nment
+
+(/usr/share/texmf-texlive/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count103
+\float@exts=\toks30
+\float@box=\box28
+\@float@everytoks=\toks31
+\@floatcapt=\box29
+)
+(/usr/share/texmf-texlive/tex/latex/base/ifthen.sty
+Package: ifthen 2001/05/26 v1.1c Standard LaTeX ifthen package (DPC)
+)
+\@float@every@algorithm=\toks32
+\c@algorithm=\count104
+)
+(/usr/share/texmf-texlive/tex/latex/algorithms/algorithmic.sty
+Package: algorithmic 2009/08/24 v0.1 Document Style `algorithmic'
+\c@ALC@unique=\count105
+\c@ALC@line=\count106
+\c@ALC@rem=\count107
+\c@ALC@depth=\count108
+\ALC@tlm=\skip49
+\algorithmicindent=\skip50
+)
+(/usr/share/texmf-texlive/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf.sty
+Package: epstopdf 2009/10/17 v2.4 Conversion with epstopdf on the fly (HO)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2009/10/17 v2.4 Base part for package epstopdf
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2007/09/09 v1.2 Providing info/warning/message (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/grfext.sty
+Package: grfext 2007/09/30 v1.0 Managing graphics extensions (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2009/08/13 v3.4 Keyval support for LaTeX options (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/kvsetkeys.sty
+Package: kvsetkeys 2009/07/30 v1.5 Key value parser with default handler suppor
+t (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/etexcmds.sty
+Package: etexcmds 2007/12/12 v1.2 Prefix for e-TeX command names (HO)
+Package etexcmds Info: Could not find \expanded.
+(etexcmds)             That can mean that you are not using pdfTeX 1.50 or
+(etexcmds)             that some package has redefined \expanded.
+(etexcmds)             In the latter case, load this package earlier.
+)))
+(/usr/share/texmf-texlive/tex/generic/oberdiek/pdftexcmds.sty
+Package: pdftexcmds 2009/09/23 v0.6 LuaTeX support for pdfTeX utility functions
+ (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifluatex.sty
+Package: ifluatex 2009/04/17 v1.2 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2009/08/05 v1.0 Some LaTeX kernel commands for general use (HO
+)
+)
+Package pdftexcmds Info: LuaTeX not detected.
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+)
+
+Package epstopdf Warning: Other drivers than `pdftex.def' are not supported.
+
+)) (/usr/share/texmf-texlive/tex/latex/fancyhdr/fancyhdr.sty
+\fancy@headwidth=\skip51
+\f@ncyO@elh=\skip52
+\f@ncyO@erh=\skip53
+\f@ncyO@olh=\skip54
+\f@ncyO@orh=\skip55
+\f@ncyO@elf=\skip56
+\f@ncyO@erf=\skip57
+\f@ncyO@olf=\skip58
+\f@ncyO@orf=\skip59
+)
+(/usr/share/texmf-texlive/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2009/10/09 v6.79a Hypertext links for LaTeX
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2009/04/10 v2.0 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in pdf mode not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2008/11/04 v1.4 Switches for detecting VTeX and its modes (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texmf-texlive/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2009/01/23 v0.5 Provides ifxetex conditional
+)
+(/usr/share/texmf-texlive/tex/latex/oberdiek/hycolor.sty
+Package: hycolor 2009/10/02 v1.5 Code for color options of hyperref/bookmark (H
+O)
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/xcolor-patch.sty
+Package: xcolor-patch 2009/10/02 xcolor patch
+))
+\@linkdim=\dimen115
+\Hy@linkcounter=\count109
+\Hy@pagecounter=\count110
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2009/10/09 v6.79a Hyperref: PDFDocEncoding definition (HO)
+)
+(/usr/share/texmf-texlive/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `final' set `true' on input line 2864.
+Package hyperref Info: Option `colorlinks' set `true' on input line 2864.
+Package hyperref Info: Hyper figures OFF on input line 2975.
+Package hyperref Info: Link nesting OFF on input line 2980.
+Package hyperref Info: Hyper index ON on input line 2983.
+Package hyperref Info: Plain pages OFF on input line 2990.
+Package hyperref Info: Backreferencing OFF on input line 2995.
+
+Implicit mode ON; LaTeX internals redefined
+Package hyperref Info: Bookmarks ON on input line 3191.
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/url.sty
+\Urlmuskip=\muskip11
+Package: url 2006/04/12  ver 3.3  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 3428.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bitset.sty
+Package: bitset 2007/09/28 v1.0 Data type bit set (HO)
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/intcalc.sty
+Package: intcalc 2007/09/27 v1.1 Expandable integer calculations (HO)
+)
+(/usr/share/texmf-texlive/tex/generic/oberdiek/bigintcalc.sty
+Package: bigintcalc 2007/11/11 v1.1 Expandable big integer calculations (HO)
+))
+\Fld@menulength=\count111
+\Field@Width=\dimen116
+\Fld@charsize=\dimen117
+\Field@toks=\toks33
+Package hyperref Info: Hyper figures OFF on input line 4377.
+Package hyperref Info: Link nesting OFF on input line 4382.
+Package hyperref Info: Hyper index ON on input line 4385.
+Package hyperref Info: backreferencing OFF on input line 4392.
+Package hyperref Info: Link coloring ON on input line 4395.
+Package hyperref Info: Link coloring with OCG OFF on input line 4402.
+Package hyperref Info: PDF/A mode OFF on input line 4407.
+
+(/usr/share/texmf-texlive/tex/generic/oberdiek/atbegshi.sty
+Package: atbegshi 2008/07/31 v1.9 At begin shipout hook (HO)
+)
+\Hy@abspage=\count112
+\c@Item=\count113
+\c@Hfootnote=\count114
+)
+*hyperref using default driver hdvips*
+(/usr/share/texmf-texlive/tex/latex/hyperref/hdvips.def
+File: hdvips.def 2009/10/09 v6.79a Hyperref driver for dvips
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/pdfmark.def
+File: pdfmark.def 2009/10/09 v6.79a Hyperref definitions for pdfmark specials
+\pdf@docset=\toks34
+\pdf@box=\box30
+\pdf@toks=\toks35
+\pdf@defaulttoks=\toks36
+\Fld@listcount=\count115
+))
+(/usr/share/texmf-texlive/tex/latex/caption/caption2.sty
+Package: caption2 2008/07/01 v2.2c Customising captions (AS)
+
+
+Package caption2 Warning: ****************************************************
+(caption2)                THIS PACKAGE IS OBSOLETE:
+(caption2)                This package attempts to provide an `caption2'
+(caption2)                package v2.0/2.1 author environment so that OLD
+(caption2)                documents can be successfully processed. It should
+(caption2)                NOT be used for NEW documents! New documents should
+(caption2)                use the regular `caption' package v3.x instead.
+(caption2)                ****************************************************
+
+(/usr/share/texmf-texlive/tex/latex/caption/caption3.sty
+Package: caption3 2009/10/09 v3.1k caption3 kernel (AR)
+\captionmargin=\dimen118
+\captionmargin@=\dimen119
+\captionwidth=\dimen120
+\caption@indent=\dimen121
+\caption@parindent=\dimen122
+\caption@hangindent=\dimen123
+)
+Package caption2 Info: Running in caption2 v2.0 compatibility mode on input lin
+e 209.
+\captionlinewidth=\dimen124
+\realcaptionwidth=\dimen125
+Package caption2 Info: float package v1.2 (or newer) detected on input line 318
+.
+)
+(/usr/share/texmf-texlive/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen126
+\WF@size=\dimen127
+\c@WF@wrappedlines=\count116
+\WF@box=\box31
+\WF@everypar=\toks37
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.sty
+Package: subfigure 2002/03/15 v2.1.5 subfigure package
+\subfigtopskip=\skip60
+\subfigcapskip=\skip61
+\subfigcaptopadj=\dimen128
+\subfigbottomskip=\skip62
+\subfigcapmargin=\dimen129
+\subfiglabelskip=\skip63
+\c@subfigure=\count117
+\c@lofdepth=\count118
+\c@subtable=\count119
+\c@lotdepth=\count120
+
+****************************************
+* Local config file subfigure.cfg used *
+****************************************
+(/usr/share/texmf-texlive/tex/latex/subfigure/subfigure.cfg)
+\subfig@top=\skip64
+\subfig@bottom=\skip65
+)
+(/usr/share/texmf-texlive/tex/latex/base/makeidx.sty
+Package: makeidx 2000/03/29 v1.0m Standard LaTeX package
+)
+(/usr/share/texmf-texlive/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2007/08/12 v2.8 Sectioning titles
+\ttl@box=\box32
+\beforetitleunit=\skip66
+\aftertitleunit=\skip67
+\ttl@plus=\dimen130
+\ttl@minus=\dimen131
+\ttl@toksa=\toks38
+\titlewidth=\dimen132
+\titlewidthlast=\dimen133
+\titlewidthfirst=\dimen134
+)
+(/usr/share/texmf-texlive/tex/latex/rotating/rotating.sty
+Package: rotating 2009/03/28 v2.16a rotated objects in LaTeX
+\c@r@tfl@t=\count121
+\rotFPtop=\skip68
+\rotFPbot=\skip69
+\rot@float@box=\box33
+\rot@mess@toks=\toks39
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.sty
+\lst@mode=\count122
+\lst@gtempboxa=\box34
+\lst@token=\toks40
+\lst@length=\count123
+\lst@currlwidth=\dimen135
+\lst@column=\count124
+\lst@pos=\count125
+\lst@lostspace=\dimen136
+\lst@width=\dimen137
+\lst@newlines=\count126
+\lst@lineno=\count127
+\lst@maxwidth=\dimen138
+
+(/usr/share/texmf-texlive/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2007/02/22 1.4 (Carsten Heinz)
+\c@lstnumber=\count128
+\lst@skipnumbers=\count129
+\lst@framebox=\box35
+)
+(/usr/share/texmf-texlive/tex/latex/listings/listings.cfg
+File: listings.cfg 2007/02/22 1.4 listings configuration
+))
+Package: listings 2007/02/22 1.4 (Carsten Heinz)
+
+(/usr/share/texmf-texlive/tex/generic/genmisc/time.sty
+\hour=\count130
+\minute=\count131
+)
+(/usr/share/texmf-texlive/tex/latex/tools/tabularx.sty
+Package: tabularx 1999/01/07 v2.07 `tabularx' package (DPC)
+
+(/usr/share/texmf-texlive/tex/latex/tools/array.sty
+Package: array 2008/09/09 v2.4c Tabular extension package (FMi)
+\col@sep=\dimen139
+\extrarowheight=\dimen140
+\NC@list=\toks41
+\extratabsurround=\skip70
+\backup@length=\skip71
+)
+\TX@col@width=\dimen141
+\TX@old@table=\dimen142
+\TX@old@col=\dimen143
+\TX@target=\dimen144
+\TX@delta=\dimen145
+\TX@cols=\count132
+\TX@ftn=\toks42
+)
+(/usr/share/texmf-texlive/tex/latex/tools/longtable.sty
+Package: longtable 2004/02/01 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip72
+\LTright=\skip73
+\LTpre=\skip74
+\LTpost=\skip75
+\LTchunksize=\count133
+\LTcapwidth=\dimen146
+\LT@head=\box36
+\LT@firsthead=\box37
+\LT@foot=\box38
+\LT@lastfoot=\box39
+\LT@cols=\count134
+\LT@rows=\count135
+\c@LT@tables=\count136
+\c@LT@chunks=\count137
+\LT@p@ftn=\toks43
+)
+(/usr/share/texmf-texlive/tex/latex/doublestroke/dsfont.sty
+Package: dsfont 1995/08/01 v0.1 Double stroke roman fonts
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 46.
+
+(./otros/spanishAlgorithmic.tex) (./otros/configuraciones.tex)
+(/usr/share/texmf-texlive/tex/latex/ltxmisc/ulem.sty
+\UL@box=\box40
+\UL@hyphenbox=\box41
+\UL@skip=\skip76
+\UL@hook=\toks44
+\UL@pe=\count138
+\UL@pixel=\dimen147
+\ULC@box=\box42
+Package: ulem 2000/05/26
+\ULdepth=\dimen148
+) (./Tesis.aux
+(./Portada/Portada.aux) (./Resumen/Abstract.aux)
+(./Agradecimientos/Agradecimientos.aux) (./Cap1/Cap1.aux) (./Cap2/Cap2.aux)
+(./Cap3/Cap3.aux) (./Cap4/Cap4.aux) (./Cap5/Cap5.aux))
+\openout1 = `Tesis.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 78.
+LaTeX Font Info:    ... okay on input line 78.
+Package hyperref Info: Link coloring ON on input line 78.
+
+(/usr/share/texmf-texlive/tex/latex/hyperref/nameref.sty
+Package: nameref 2007/05/29 v2.31 Cross-referencing by name of section
+
+(/usr/share/texmf-texlive/tex/latex/oberdiek/refcount.sty
+Package: refcount 2008/08/11 v3.1 Data extraction from references (HO)
+)
+\c@section@level=\count139
+)
+LaTeX Info: Redefining \ref on input line 78.
+LaTeX Info: Redefining \pageref on input line 78.
+ (./Tesis.out)
+(./Tesis.out)
+\@outlinefile=\write3
+\openout3 = `Tesis.out'.
+
+\AtBeginShipoutBox=\box43
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+\c@lstlisting=\count140
+\openout2 = `Portada/Portada.aux'.
+
+ (./Portada/Portada.tex
+File: Portada/cinvestavlogo.eps Graphic file (type eps)
+ <Portada/cinvestavlogo.eps>
+LaTeX Font Info:    Try loading font information for U+msa on input line 5.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2009/06/22 v3.00 AMS symbols A
+)
+LaTeX Font Info:    Try loading font information for U+msb on input line 5.
+
+(/usr/share/texmf-texlive/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2009/06/22 v3.00 AMS symbols B
+)
+Overfull \hbox (16.99998pt too wide) in paragraph at lines 3--12
+[]$[]$$[]$ 
+ []
+
+[1
+
+
+
+] [2
+
+])
+\openout2 = `Resumen/Abstract.aux'.
+
+ (./Resumen/Abstract.tex
+
+Package hyperref Warning: No destination for bookmark of \addcontentsline,
+(hyperref)                destination is added on input line 1.
+
+[3
+
+
+
+] [4
+
+]) [5]
+\openout2 = `Agradecimientos/Agradecimientos.aux'.
+
+ (./Agradecimientos/Agradecimientos.tex [6
+
+
+
+] [7] [8
+
+]) [9] [10
+
+
+]
+(./Tesis.toc
+
+LaTeX Font Warning: Font shape `OT1/cmr/bx/sc' undefined
+(Font)              using `OT1/cmr/bx/n' instead on input line 2.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 2.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 3.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 4.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 5.
+
+
+Package spanish Warning: Replacing `OT1/cmr/bx/sc' by 
+(spanish)                faked small caps on input line 6.
+
+[11])
+\tf@toc=\write4
+\openout4 = `Tesis.toc'.
+
+ [12] (./Tesis.lof [13
+
+])
+\tf@lof=\write5
+\openout5 = `Tesis.lof'.
+
+ [14] (./Tesis.lot)
+\tf@lot=\write6
+\openout6 = `Tesis.lot'.
+
+ [15
+
+] [16
+
+]
+\c@definicion=\count141
+\c@teorema=\count142
+\c@axioma=\count143
+\c@proposicion=\count144
+\openout2 = `Cap1/Cap1.aux'.
+
+ (./Cap1/Cap1.tex
+[1
+
+
+])
+
+Package Fancyhdr Warning: \headheight is too small (12.0pt): 
+ Make it at least 14.4521pt.
+ We now make it that large for the rest of the document.
+ This may cause the page layout to be inconsistent, however.
+
+[2]
+\openout2 = `Cap2/Cap2.aux'.
+
+ (./Cap2/Cap2.tex
+Cap\'{\i }tulo 1.
+
+Overfull \hbox (0.91293pt too wide) in paragraph at lines 12--16
+\OT1/cmr/m/n/10.95 do a que pre-sen-tan las si-guien-tes ca-rac-ter^^S^^Psti-ca
+s [[]]: 
+ []
+
+[3
+
+
+
+]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 59.
+ (/usr/share/texmf-texlive/tex/latex/base/omscmr.fd
+File: omscmr.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
+LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10.95> not available
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 59.
+File: Cap2/1-16.eps Graphic file (type eps)
+ <Cap2/1-16.eps>
+[4]
+File: Cap2/1-17.eps Graphic file (type eps)
+ <Cap2/1-17.eps>
+File: Cap2/1-18.eps Graphic file (type eps)
+ <Cap2/1-18.eps> [5] [6]
+File: Cap2/1-1.eps Graphic file (type eps)
+ <Cap2/1-1.eps> [7]
+File: Cap2/1-4.eps Graphic file (type eps)
+ <Cap2/1-4.eps>
+[8]
+File: Cap2/1-2.eps Graphic file (type eps)
+ <Cap2/1-2.eps>
+File: Cap2/1-3.eps Graphic file (type eps)
+ <Cap2/1-3.eps> [9] [10]
+Package hyperref Info: bookmark level for unknown algorithm defaults to 0 on in
+put line 380.
+ [11]
+File: Cap2/1-19.eps Graphic file (type eps)
+ <Cap2/1-19.eps> [12] [13]
+[14] [15] [16] [17] [18] [19]
+File: Cap2/1-5.eps Graphic file (type eps)
+ <Cap2/1-5.eps>
+Underfull \vbox (badness 1990) has occurred while \output is active []
+
+ [20]
+File: Cap2/1-10.eps Graphic file (type eps)
+
+<Cap2/1-10.eps> [21]
+File: Cap2/1-11.eps Graphic file (type eps)
+ <Cap2/1-11.eps> [22]
+File: Cap2/1-6.eps Graphic file (type eps)
+ <Cap2/1-6.eps> [23]
+Underfull \vbox (badness 1838) has occurred while \output is active []
+
+ [24]
+[25] [26] [27] [28]
+File: Cap2/1-7.eps Graphic file (type eps)
+ <Cap2/1-7.eps> [29]
+File: Cap2/1-8.eps Graphic file (type eps)
+ <Cap2/1-8.eps> [30] [31] [32]
+
+Package amsmath Warning: Foreign command \atopwithdelims;
+(amsmath)                \frac or \genfrac should be used instead
+(amsmath)                 on input line 1276.
+
+File: Cap2/1-9.eps Graphic file (type eps)
+<Cap2/1-9.eps> [33]
+LaTeX Font Info:    Try loading font information for U+dsrom on input line 1335
+.
+ (/usr/share/texmf-texlive/tex/latex/doublestroke/Udsrom.fd
+File: Udsrom.fd 1995/08/01 v0.1 Double stroke roman font definitions
+)
+Overfull \hbox (11.86876pt too wide) in paragraph at lines 1440--1451
+[]\OT1/cmr/m/n/10.95 La ma-ne-ra de ha-cer-lo es se-lec-cio-nar al azar de ma-n
+e-ra uni-for-me va-rios ob-je-ti-vos ($\OML/cmm/m/it/10.95 s[]; [] ; s[]$\OT1/c
+mr/m/n/10.95 )
+ []
+
+[34] [35] [36]) [37]
+\openout2 = `Cap3/Cap3.aux'.
+
+ (./Cap3/Cap3.tex [38
+
+
+
+]
+Cap\'{\i }tulo 2.
+
+Overfull \hbox (1.17627pt too wide) in paragraph at lines 34--35
+[]$\OML/cmm/m/it/10.95 A$\OT1/cmr/m/n/10.95 : con-tie-ne a la po-bla-ci^^Son se
+-cun-da-ria o del ar-chi-vo, don-de $\OML/cmm/m/it/10.95 A \OT1/cmr/m/n/10.95 =
+ \OML/cmm/m/it/10.95 a[]$ \OT1/cmr/m/n/10.95 con $\OML/cmm/m/it/10.95 j \OT1/cm
+r/m/n/10.95 = 1\OML/cmm/m/it/10.95 ; [] ; tam[]$
+ []
+
+[39] [40]
+File: Cap3/1-13.eps Graphic file (type eps)
+ <Cap3/1-13.eps> [41]
+File: Cap3/time1.eps Graphic file (type eps)
+ <Cap3/time1.eps>
+Overfull \hbox (29.71233pt too wide) in paragraph at lines 150--152
+ [][] 
+ []
+
+File: Cap3/time2.eps Graphic file (type eps)
+<Cap3/time2.eps>
+Overfull \hbox (51.39465pt too wide) in paragraph at lines 158--160
+ [][] 
+ []
+
+File: Cap3/time3.eps Graphic file (type eps)
+<Cap3/time3.eps>
+Overfull \hbox (51.39465pt too wide) in paragraph at lines 165--167
+ [][] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 193--194
+
+ []
+
+[42] [43]
+File: Cap3/1-15.eps Graphic file (type eps)
+ <Cap3/1-15.eps> [44] [45]) [46]
+\openout2 = `Cap4/Cap4.aux'.
+
+ (./Cap4/Cap4.tex
+Cap\'{\i }tulo 3.
+
+Overfull \hbox (19.43333pt too wide) in paragraph at lines 40--78
+[]$[]$ $[]$ 
+ []
+
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+ [47
+
+
+
+]
+[48] [49]
+File: ApendiceA/paretoZDT1.eps Graphic file (type eps)
+ <ApendiceA/paretoZDT1.eps>
+File: ApendiceA/paretoZDT2.eps Graphic file (type eps)
+ <ApendiceA/paretoZDT2.eps>
+File: ApendiceA/paretoZDT3.eps Graphic file (type eps)
+
+<ApendiceA/paretoZDT3.eps>
+File: ApendiceA/paretoZDT4.eps Graphic file (type eps)
+ <ApendiceA/paretoZDT4.eps>
+File: ApendiceA/paretoZDT6.eps Graphic file (type eps)
+
+<ApendiceA/paretoZDT6.eps> [50] [51] [52] [53] [54] [55]
+File: Cap4/rzdt1r.eps Graphic file (type eps)
+ <Cap4/rzdt1r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 336--338
+ [][] 
+ []
+
+[56] [57
+
+]
+File: Cap4/rzdt2r.eps Graphic file (type eps)
+ <Cap4/rzdt2r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 397--398
+ [] 
+ []
+
+[58] [59
+
+
+]
+File: Cap4/rzdt3r.eps Graphic file (type eps)
+ <Cap4/rzdt3r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 458--459
+ [] 
+ []
+
+[60] [61
+
+
+]
+File: Cap4/rzdt4r.eps Graphic file (type eps)
+ <Cap4/rzdt4r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 518--519
+ [] 
+ []
+
+[62] [63
+
+
+]
+File: Cap4/rzdt6r.eps Graphic file (type eps)
+ <Cap4/rzdt6r.eps>
+Overfull \hbox (26.64644pt too wide) in paragraph at lines 582--583
+ [] 
+ []
+
+[64]
+Underfull \vbox (badness 8113) has occurred while \output is active []
+
+ [65
+
+
+]
+Underfull \vbox (badness 2197) has occurred while \output is active []
+
+ [66]
+[67]
+File: ApendiceA/paretoDTLZ1.eps Graphic file (type eps)
+ <ApendiceA/paretoDTLZ1.eps>
+File: ApendiceA/paretoDTLZ2.eps Graphic file (type eps)
+ <ApendiceA/paretoDTLZ2.eps>
+File: ApendiceA/paretoDTLZ5.eps Graphic file (type eps)
+
+<ApendiceA/paretoDTLZ5.eps>
+File: ApendiceA/paretoDTLZ6.eps Graphic file (type eps)
+ <ApendiceA/paretoDTLZ6.eps>
+File: ApendiceA/paretoDTLZ7.eps Graphic file (type eps)
+
+<ApendiceA/paretoDTLZ7.eps> [68] [69] [70] [71] [72] [73
+
+]
+File: Cap4/rdtlz1r.eps Graphic file (type eps)
+ <Cap4/rdtlz1r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 863--864
+ [] 
+ []
+
+[74] [75
+
+
+]
+File: Cap4/rdtlz2r.eps Graphic file (type eps)
+ <Cap4/rdtlz2r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 932--933
+ [] 
+ []
+
+[76] [77
+
+
+]
+File: Cap4/rdtlz3r.eps Graphic file (type eps)
+ <Cap4/rdtlz3r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 995--996
+ [] 
+ []
+
+[78] [79
+
+
+]
+File: Cap4/rdtlz4r.eps Graphic file (type eps)
+ <Cap4/rdtlz4r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 1063--1064
+ [] 
+ []
+
+[80] [81
+
+
+]
+File: Cap4/rdtlz5r.eps Graphic file (type eps)
+ <Cap4/rdtlz5r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 1131--1132
+ [] 
+ []
+
+[82] [83
+
+
+]
+File: Cap4/rdtlz6r.eps Graphic file (type eps)
+ <Cap4/rdtlz6r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 1190--1191
+ [] 
+ []
+
+[84] [85
+
+
+]
+File: Cap4/rdtlz7r.eps Graphic file (type eps)
+ <Cap4/rdtlz7r.eps>
+Overfull \hbox (28.45317pt too wide) in paragraph at lines 1255--1256
+ [] 
+ []
+
+[86]
+Underfull \vbox (badness 10000) detected at line 1298
+ []
+
+[87
+
+
+]
+Underfull \vbox (badness 10000) detected at line 1371
+ []
+
+[88]
+File: Cap4/tiempoEscala.eps Graphic file (type eps)
+ <Cap4/tiempoEscala.eps>
+Overfull \hbox (16.06001pt too wide) in paragraph at lines 1437--1438
+ [] 
+ []
+
+) [89] [90]
+\openout2 = `Cap5/Cap5.aux'.
+
+ (./Cap5/Cap5.tex
+Cap\'{\i }tulo 4.
+[91
+
+
+
+] [92]) [93] [94
+
+
+] (./Tesis.bbl [95
+
+] [96] [97] [98] [99]) [100] (./Tesis.aux
+(./Portada/Portada.aux) (./Resumen/Abstract.aux)
+(./Agradecimientos/Agradecimientos.aux) (./Cap1/Cap1.aux) (./Cap2/Cap2.aux)
+(./Cap3/Cap3.aux) (./Cap4/Cap4.aux) (./Cap5/Cap5.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 9263 strings out of 493849
+ 129855 string characters out of 1152846
+ 242484 words of memory out of 3000000
+ 12218 multiletter control sequences out of 15000+50000
+ 14771 words of font info for 60 fonts, out of 3000000 for 9000
+ 714 hyphenation exceptions out of 8191
+ 41i,14n,43p,279b,777s stack positions out of 5000i,500n,10000p,200000b,50000s
+
+Output written on Tesis.dvi (116 pages, 607600 bytes).

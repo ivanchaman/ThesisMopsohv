@@ -1,0 +1,10 @@
+\contentsline {algorithm}{\numberline {2.1}{\ignorespaces Estructura b\'asica de un algoritmo evolutivo multi-objetivo}}{12}{algorithm.2.1}
+\contentsline {algorithm}{\numberline {2.2}{\ignorespaces Pseudoc\'odigo del algoritmo de PSO b\'asico}}{18}{algorithm.2.2}
+\contentsline {algorithm}{\numberline {2.3}{\ignorespaces Pseudoc\'odigo del algoritmo PSO multi-objetivo}}{24}{algorithm.2.3}
+\contentsline {algorithm}{\numberline {2.4}{\ignorespaces $CalcVolume\left (H\right )$}}{29}{algorithm.2.4}
+\contentsline {algorithm}{\numberline {2.5}{\ignorespaces $estimandoContribucion\left (\mathcal {P}\right )$}}{30}{algorithm.2.5}
+\contentsline {algorithm}{\numberline {2.6}{\ignorespaces $hypeExact$}}{31}{algorithm.2.6}
+\contentsline {algorithm}{\numberline {2.7}{\ignorespaces $hypeSampling$}}{32}{algorithm.2.7}
+\contentsline {algorithm}{\numberline {3.1}{\ignorespaces Algoritmo PSO multi-objetivo basado en Hipervolumen}}{37}{algorithm.3.1}
+\contentsline {algorithm}{\numberline {3.2}{\ignorespaces Calcular la contribuci\'on de las part\'iculas de la poblaci\'on}}{40}{algorithm.3.2}
+\contentsline {algorithm}{\numberline {3.3}{\ignorespaces Operador de Mutaci\'on}}{41}{algorithm.3.3}

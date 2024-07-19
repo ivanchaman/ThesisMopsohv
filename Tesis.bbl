@@ -1,0 +1,405 @@
+\begin{thebibliography}{}
+
+\bibitem[Angeline et~al., 1999]{paes99}
+Angeline, P.~J., Michalewicz, Z., Schoenauer, M., Yao, X., and Zalzala, A.,
+  editors (1999).
+\newblock {\em {The Pareto Archived Evolution Strategy: A New Baseline
+  Algorithm for Pareto Multiobjective Optimisation}}, volume~1, Mayflower
+  Hotel, Washington D.C., USA. IEEE Press.
+
+\bibitem[B{\"{a}}ck et~al., 1997]{Back97}
+B{\"{a}}ck, T., Fogel, D., and Michalewicz, Z. (1997).
+\newblock {\em {Handbook of Evolutionary Computation}}.
+\newblock Oxford Univ. Press.
+
+\bibitem[Bader et~al., 2008]{bdz2008a}
+Bader, J., Deb, K., and Zitzler, E. (2008).
+\newblock {F}aster {H}ypervolume-{B}ased {S}earch {U}sing {M}onte {C}arlo
+  {S}ampling.
+\newblock In Ehrgott, M., Naujoks, B., Stewart, T.~J., and Wallenius, J.,
+  editors, {\em MCDM}, volume 634 of {\em Lecture Notes in Economics and
+  Mathematical Systems}, pages 313--326. Springer.
+
+\bibitem[Bader and Zitzler, 2011]{Bader11}
+Bader, J. and Zitzler, E. (2011).
+\newblock {HypE}: {A}n {A}lgorithm for {F}ast {H}ypervolume-{B}ased
+  {M}any-{O}bjective {O}ptimization.
+\newblock {\em Evolutionary Computation}, 19(1):45--76.
+
+\bibitem[Beume, 2009]{Beume2009}
+Beume, N. (2009).
+\newblock {S-Metric} {C}alculation by {C}onsidering {D}ominated {H}ypervolume
+  as {K}lee's {M}easure {P}roblem.
+\newblock {\em Evolutionary Computation}, 17(4):477--492.
+
+\bibitem[Beume et~al., 2009]{BeuFon2009}
+Beume, N., Fonseca, C.~M., L{\'o}pez-Ib{\'a}{\~n}ez, M., Paquete, L., and
+  Vahrenhold, J. (2009).
+\newblock {On the Complexity of Computing the Hypervolume Indicator}.
+\newblock {\em IEEE Trans. Evolutionary Computation}, 13(5):1075--1082.
+
+\bibitem[Beume et~al., 2007]{Beume07}
+Beume, N., Naujoks, B., and Emmerich, M. (2007).
+\newblock {SMS-EMOA}: {M}ultiobjective {S}election {B}ased on {D}ominated
+  {H}ypervolume.
+\newblock {\em European Journal of Operational Research}, 181(3):1653--1669.
+
+\bibitem[Braberman et~al., 2007]{Braberman07}
+Braberman, V.~A., Obes, J.~L., Olivero, A., and Schapachnik, F. (2007).
+\newblock {H}ypervolume {A}pproximation in {T}imed {A}utomata {M}odel
+  {C}hecking.
+\newblock In Raskin, J.-F. and Thiagarajan, P.~S., editors, {\em FORMATS},
+  volume 4763 of {\em Lecture Notes in Computer Science}, pages 69--81.
+  Springer.
+
+\bibitem[Bringmann and Friedrich, 2008]{BringmannF08}
+Bringmann, K. and Friedrich, T. (2008).
+\newblock Approximating the volume of unions and intersections of
+  high-dimensional geometric objects.
+\newblock In Hong, S.-H., Nagamochi, H., and Fukunaga, T., editors, {\em
+  ISAAC}, volume 5369 of {\em Lecture Notes in Computer Science}, pages
+  436--447. Springer.
+
+\bibitem[Bringmann and Friedrich, 2009]{Bringmann2}
+Bringmann, K. and Friedrich, T. (2009).
+\newblock {D}on't be {G}reedy when {C}alculating {H}ypervolume {C}ontributions.
+\newblock In Garibay, I.~I., Jansen, T., Wiegand, R.~P., and Wu, A.~S.,
+  editors, {\em FOGA}, pages 103--112. ACM.
+
+\bibitem[Bringmann and Friedrich, 2010]{bringmann}
+Bringmann, K. and Friedrich, T. (2010).
+\newblock {A}n {E}fficient {A}lgorithm for {C}omputing {H}ypervolume
+  {C}ontributions.
+\newblock {\em Evolutionary Computation}, 18(3):383--402.
+
+\bibitem[Cagnina, 2010]{cagnia10}
+Cagnina, L.~C. (2010).
+\newblock {\em {Optimizaci{\'{o}}n Mono y Multiobjetivo a trav{\'{e}}s de una
+  Heur{\'{i}}stica de Interligencia Colectiva}}.
+\newblock PhD thesis, Universidad Nacional de San Luis.
+
+\bibitem[Chang et~al., 2005]{Parallel}
+Chang, J.-F., Chu, S.-C., Roddick, J.~F., and Pan, J.-S. (2005).
+\newblock {A Parallel Particle Swarm Optimization Algorithm with Communication
+  Strategies}.
+\newblock {\em J. Inf. Sci. Eng.}, 21(4):809--818.
+
+\bibitem[Clerc, 1999]{clerc99}
+Clerc, M. (1999).
+\newblock {The Swarm and the Queen: Towards a Deterministic and Adaptive
+  Particle Swarm Optimization}.
+\newblock In {\em Congress on Evolutionary Computation}, volume~3, pages
+  1951--1957.
+
+\bibitem[Clerc and Kennedy, 2002]{Maurice11}
+Clerc, M. and Kennedy, J. (2002).
+\newblock {T}he {P}article {S}warm: {E}xplosion, {S}tability and {C}onvergence
+  in a {M}ultidimensional {C}omplex {S}pace.
+\newblock {\em IEEE Trans. Evolutionary Computation}, 6(1):58--73.
+
+\bibitem[Coello et~al., 2006]{EASMC}
+Coello, C. A.~C., Lamont, G.~B., and Veldhuizen, D. A.~V. (2006).
+\newblock {\em {Evolutionary Algorithms for Solving Multi-Objective Problems
+  (Genetic and Evolutionary Computation)}}.
+\newblock Springer-Verlag New York, Inc., Secaucus, NJ, USA.
+
+\bibitem[Coello et~al., 2004]{Coello04}
+Coello, C. A.~C., Pulido, G.~T., and Lechuga, M.~S. (2004).
+\newblock {Handling Multiple Objectives With Particle Swarm Optimization}.
+\newblock {\em IEEE Trans. Evolutionary Computation}, 8(3):256--279.
+
+\bibitem[Darwin, 1959]{darwin59}
+Darwin, C. (1959).
+\newblock {\em {The origin of species by means of natural selection by Means of
+  Natural Selection, or The Preservation of Struggle for Life}}.
+\newblock Penguin Book Ltd. New York :Hurst,.
+\newblock http://www.biodiversitylibrary.org/bibliography/2106.
+
+\bibitem[Deb et~al., 2000]{deb02}
+Deb, K., Agrawal, S., Pratap, A., and Meyarivan, T. (2000).
+\newblock {A Fast Elitist Non-dominated Sorting Genetic Algorithm for
+  Multi-objective Optimisation: NSGA-II}.
+\newblock In Schoenauer, M., Deb, K., Rudolph, G., Yao, X., Lutton, E.,
+  Guerv{\'o}s, J. J.~M., and Schwefel, H.-P., editors, {\em PPSN}, volume 1917
+  of {\em Lecture Notes in Computer Science}, pages 849--858. Springer.
+
+\bibitem[Deb et~al., 2002]{dtlz2002a}
+Deb, K., Thiele, L., Laumanns, M., and Zitzler, E. (2002).
+\newblock {Scalable Multi-Objective Optimization Test Problems}.
+\newblock In {\em Congress on Evolutionary Computation (CEC 2002)}, pages
+  825--830. IEEE Press.
+
+\bibitem[Eberhart et~al., 1996]{Eberhart1996}
+Eberhart, R., Simpson, P., and Dobbins, R. (1996).
+\newblock {\em {Computational intelligence PC tools}}.
+\newblock Academic Press Professional, Inc., San Diego, CA, USA.
+
+\bibitem[Eberhart et~al., 2001]{JKennedySI}
+Eberhart, R.~C., Shi, Y., and Kennedy, J. (2001).
+\newblock {\em {Swarm Intelligence (The Morgan Kaufmann Series in Evolutionary
+  Computation)}}.
+\newblock Morgan Kaufmann, 1st edition.
+
+\bibitem[Emmerich et~al., 2005]{Emmerich05anemo}
+Emmerich, M., Beume, N., and Naujoks, B. (2005).
+\newblock {An EMO Algorithm Using the Hypervolume Measure as Selection
+  Criterion}.
+\newblock In Coello, C. A.~C., Aguirre, A.~H., and Zitzler, E., editors, {\em
+  EMO}, volume 3410 of {\em Lecture Notes in Computer Science}, pages 62--76.
+  Springer.
+
+\bibitem[Everson et~al., 2002]{Everson02fullelite}
+Everson, R.~M., Fieldsend, J.~E., and Singh, S. (2002).
+\newblock {Full Elite Sets for Multi-Objective Optimisation}.
+\newblock Conference on Adaptive Computing in Design and Manufacture, pages
+  343--354. In I. Parmee (Eds.).
+
+\bibitem[Fogel, 1964]{Fogel64}
+Fogel, L. (1964).
+\newblock {\em {On the Organization of Intellect}}.
+\newblock University of California, Los Angeles - Engineering.
+
+\bibitem[Fonseca et~al., 2006]{FonPaqhypervolume}
+Fonseca, C.~M., Paquete, L., and L{\'o}pez-Ib{\'a}{\~n}ez, M. (2006).
+\newblock {An Improved Dimension\hspace{0pt}-\hspace{0pt}Sweep Algorithm for
+  the Hypervolume Indicator}.
+\newblock In {\em Proceedings of the 2006 Congress on Evolutionary Computation
+  (CEC 2006)}, pages 1157--1163. IEEE Press, Piscataway, NJ.
+
+\bibitem[Fu et~al., 2011]{FuJZ11}
+Fu, W., Johnston, M., and Zhang, M. (2011).
+\newblock {Hybrid Particle Swarm Optimisation based on history Information
+  Sharing}.
+\newblock In Krasnogor, N. and Lanzi, P.~L., editors, {\em GECCO}, pages
+  77--84. ACM.
+
+\bibitem[Hoffman, 1989]{hoffman89}
+Hoffman, A. (1989).
+\newblock {Arguments on evolution. A paleontologist's perspective}.
+\newblock {\em American Journal of Physical Anthropology, Oxford University
+  Press USA}, 80(3):405--406.
+
+\bibitem[Holland, 1992]{Holland75}
+Holland, J.~H. (1992).
+\newblock {\em {Adaptation in Natural and Artificial Systems}}.
+\newblock MIT Press, Cambridge, MA, USA.
+
+\bibitem[Hu and Eberhart, 2002]{Hu02multiobjectiveoptimization}
+Hu, X. and Eberhart, R. (2002).
+\newblock {Multiobjective Optimization Using Dynamic Neighborhood Particle
+  Swarm Optimization}.
+\newblock {\em Computational Intelligence, Proceedings of the World on Congress
+  on}, 2:1677--1681.
+
+\bibitem[Hu et~al., 2003]{Hu03particleswarm}
+Hu, X., Eberhart, R., and Shi, Y. (2003).
+\newblock {Particle Swarm with Extended Memory for Multiobjective
+  Optimization}.
+\newblock In {\em Swarm Intelligence Symposium, 2003. SIS '03. Proceedings of
+  the 2003 IEEE}, pages 193 -- 197.
+
+\bibitem[{Kennedy}, 1997]{JKennedy11}
+{Kennedy}, J. (1997).
+\newblock {The Particle Swarm: Social Adaptation of Knowledge}.
+\newblock In {\em Proceedings of IEEE International Conference on Evolutionary
+  Computation}, pages 303--308.
+
+\bibitem[Kennedy and Eberhart, 1995]{JKRBParticle}
+Kennedy, J. and Eberhart, R. (1995).
+\newblock {Particle Swarm Optimization}.
+\newblock {\em IEEE International Conference on Neural Networks. Proceedings.},
+  4:1942--1948 vol.4.
+
+\bibitem[Kennedy and Mendes, 2006]{JKRBPaM}
+Kennedy, J. and Mendes, R. (2006).
+\newblock {Neighborhood topologies in fully informed and Best of Neighborhood
+  Particle Swarms}.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics, Part C:
+  Applications and Reviews.}, 36(4):515--519.
+
+\bibitem[Lechuga and Rowe, 2005]{Salazar05a}
+Lechuga, M.~S. and Rowe, J.~E. (2005).
+\newblock {Particle Swarm Optimization and Fitness Sharing to Solve
+  Multiobjective Optimization Problems}.
+\newblock In {\em Congress on Evolutionary Computation}, pages 1204--1211.
+  IEEE.
+
+\bibitem[Mart\'{\i}nez and Coello, 2011]{MartinezC11}
+Mart\'{\i}nez, S.~Z. and Coello, C. A.~C. (2011).
+\newblock {A Multi-objective Particle Swarm Optimizer Based on Decomposition}.
+\newblock In Krasnogor, N. and Lanzi, P.~L., editors, {\em GECCO}, pages
+  69--76. ACM.
+
+\bibitem[Mendel et~al., 1965]{Mendel01}
+Mendel, G., Fisher, R.~A., and Bennett, J.~H. (1965).
+\newblock {\em { Experiments in plant hybridisation: Mendel's original paper in
+  English translation, with commentary and assessment by the late Sir Ronald A.
+  Fisher, together with a reprint of W. Bateson's biographical notice of Mendel
+  / Gregor Mendel ; edited by J.H. Bennett }}.
+\newblock Oliver and Boyd, Edinburgh.
+
+\bibitem[Miettinen, 1999]{Miettinen98}
+Miettinen, K. (1999).
+\newblock {\em {Nonlinear Multiobjective Optimization}}, volume~12 of {\em
+  International Series in Operations Research and Management Science}.
+\newblock Kluwer Academic Publishers, Dordrecht.
+
+\bibitem[Mostaghim et~al., 2007]{Mostaghim7}
+Mostaghim, S., Branke, J., and Schmeck, H. (2007).
+\newblock {Multiobjective Particle Swarm Optimization on Computer Grids}.
+\newblock In Lipson, H., editor, {\em GECCO}, pages 869--875. ACM.
+
+\bibitem[Mostaghim and Teich, 2004]{Mostaghim04coveringpareto-optimal}
+Mostaghim, S. and Teich, J. (2004).
+\newblock {Covering Pareto-optimal Fronts by Subswarms in Multi-objective
+  Particle Swarm Optimization}.
+\newblock In {\em IEEE Proceedings, World Congress on Computational
+  Intelligence {(CEC'04)}}, pages 1404--1411, Portland, USA.
+
+\bibitem[Osyczka, 1985]{EASMC85}
+Osyczka, A. (1985).
+\newblock {\em {Multicriterion Optimization in Engineering with FORTRAN
+  Programs}}.
+\newblock Academic Press.
+
+\bibitem[Padhye, 2009]{Nik11}
+Padhye, N. (2009).
+\newblock {Comparison of Archiving Methods in Multiobjective {P}article {S}warm
+  {O}ptimization (MOPSO): {E}mpirical {S}tudy}.
+\newblock In Rothlauf, F., editor, {\em GECCO}, pages 1755--1756. ACM.
+
+\bibitem[Parsopoulos and Vrahatis, 2002]{Parsopoulos02particleswarm}
+Parsopoulos, K.~E. and Vrahatis, M.~N. (2002).
+\newblock {Particle Swarm Optimization Method in Multiobjective Problems}.
+\newblock In {\em SAC}, pages 603--607. ACM.
+
+\bibitem[Raquel and Jr., 2005]{Raquel2005}
+Raquel, C.~R. and Jr., P. C.~N. (2005).
+\newblock {An Effective use of Crowding Distance in Multiobjective Particle
+  Swarm Optimization}.
+\newblock In Beyer, H.-G. and O'Reilly, U.-M., editors, {\em GECCO}, pages
+  257--264. ACM.
+
+\bibitem[Reehuis, 2010]{Edgar01}
+Reehuis, E. (2010).
+\newblock {Multiobjective Robust Optimization of Water Distribution Networks}.
+\newblock Master's thesis, Leiden Institute of Advanced Computer Science,
+  Leiden University, The Netherlands.
+
+\bibitem[{Reyes Sierra} and {Coello Coello}, 2006]{Margarita01}
+{Reyes Sierra}, M. and {Coello Coello}, C.~A. (2006).
+\newblock {Multi-Objective Particle Swarm Optimizers: A Survey of the State of
+  the Art}.
+\newblock {\em International Journal of Computational Intelligence Research},
+  2(3):287--308.
+
+\bibitem[{Rodr{\'i}guez Villalobos}, 2011]{Cynthia01}
+{Rodr{\'i}guez Villalobos}, C.~A. (2011).
+\newblock {A New Multiobjective Evolutionary Algorithm Based on a Performance
+  Assessment Indicator}.
+\newblock Master's thesis, Centro de Investigaci{\'o}n y de Estudios Avanzados
+  del Instituto Polit{\'e}cnico Nacional, campus Zacatenco, Departamento de
+  Ciencias de la Computaci{\'o}n, D.F, M{\'e}xico.
+
+\bibitem[Rosenberg, 1967]{Rosenberg67}
+Rosenberg, R. (1967).
+\newblock {\em {Simulation of Genetic Populations with Biochemical
+  Properties}}.
+\newblock PhD thesis, Univ. Michigan.
+
+\bibitem[Santana~Quintero and Coello~Coello, 2006]{vicente06}
+Santana~Quintero, L.~V. and Coello~Coello, C.~A. (2006).
+\newblock {Una introducci{\'{o}}n a la Computaci{\'{o}}n Evolutiva y Algunas de
+  sus Aplicaciones en Econom{\'{i}}a y Finanzas}.
+\newblock {\em {Revista de M{\'{e}}todos Cuantitativos para la Econom{\'{i}}a y
+  la Empresa}}, 2:3--26.
+
+\bibitem[Schaffer, 1985]{Schaffer84}
+Schaffer, J.~D. (1985).
+\newblock {Multiple Objective Optimization with Vector Evaluated Genetic
+  Algorithms}.
+\newblock In Grefenstette, J.~J., editor, {\em ICGA}, pages 93--100. Lawrence
+  Erlbaum Associates.
+
+\bibitem[Shi and Eberhart, 1998a]{citeulike33}
+Shi, Y. and Eberhart, R. (1998a).
+\newblock {A Modified Particle Swarm Optimizer}.
+\newblock {\em Evolutionary Computation Proceedings, 1998. IEEE World Congress
+  on Computational Intelligence., The 1998 IEEE International Conference on},
+  pages 69--73.
+
+\bibitem[Shi and Eberhart, 1998b]{Shi_Eberhart_1998}
+Shi, Y. and Eberhart, R.~C. (1998b).
+\newblock {\em {Parameter Selection in Particle Swarm Optimization}}, volume
+  160.
+\newblock Springer.
+
+\bibitem[Srinivas and Deb, 1994]{Srinivas94}
+Srinivas, N. and Deb, K. (1994).
+\newblock Multiobjective optimization using nondominated sorting in genetic
+  algorithms.
+\newblock {\em Evolutionary Computation}, 2(3):221--248.
+
+\bibitem[Veldhuizen and Lamont, 1998]{Veldhuizen98}
+Veldhuizen, D. A.~V. and Lamont, G.~B. (1998).
+\newblock {Multiobjective Evolutionary Algorithm Research: A History and
+  Analysis}.
+\newblock Technical Report TR-98-03, Department of Electrical and Computer
+  Engineering, Graduate School of Engineering, Air Force Institute of
+  Technology, Wright-Patterson AFB, Ohio.
+
+\bibitem[Weismann, 1893]{Weismann93}
+Weismann, A. (1893).
+\newblock {\em { The germ-plasm : a theory of heredity / by A. Weismann ;
+  translated by W. Newton Parker and H. Ronnfeldt }}.
+\newblock W. Scott, London :.
+
+\bibitem[Yang and Ding, 2007]{YangNovel}
+Yang, Q. and Ding, S. (2007).
+\newblock {Novel Algorithm to Calculate Hypervolume Indicator of Pareto
+  Approximation Set}.
+\newblock {\em CoRR}, abs/0704.1196.
+
+\bibitem[Yang, 2008]{YanNSA}
+Yang, X.-S. (2008).
+\newblock {\em {Nature-Inspired Metaheuristic Algorithms}}.
+\newblock Luniver Press.
+
+\bibitem[Zitzler et~al., 2006]{zbt2006}
+Zitzler, E., Brockhoff, D., and Thiele, L. (2006).
+\newblock {The Hypervolume Indicator Revisited: On the Design of
+  Pareto-compliant Indicators Via Weighted Integration}.
+\newblock In Obayashi, S., Deb, K., Poloni, C., Hiroyasu, T., and Murata, T.,
+  editors, {\em EMO}, volume 4403 of {\em Lecture Notes in Computer Science},
+  pages 862--876. Springer.
+
+\bibitem[Zitzler et~al., 2000]{Zitzler2000}
+Zitzler, E., Deb, K., and Thiele, L. (2000).
+\newblock {Comparison of Multiobjective Evolutionary Algorithms: Empirical
+  Results}.
+\newblock {\em Evolutionary Computation}, 8(2):173--195.
+
+\bibitem[Zitzler et~al., 2002]{zlt2002a}
+Zitzler, E., Laumanns, M., and Thiele, L. (2002).
+\newblock {SPEA2: Improving the Strength Pareto Evolutionary Algorithm for
+  Multiobjective Optimization}.
+\newblock In Giannakoglou, K. et~al., editors, {\em Evolutionary Methods for
+  Design, Optimisation and Control with Application to Industrial Problems
+  (EUROGEN 2001)}, pages 95--100. International Center for Numerical Methods in
+  Engineering (CIMNE).
+
+\bibitem[Zitzler and Thiele, 1998]{Zitzler98on}
+Zitzler, E. and Thiele, L. (1998).
+\newblock {Multiobjective Optimization Using Evolutionary Algorithms: A
+  Comparative Case Study}.
+\newblock In Eiben, A.~E., B{\"a}ck, T., Schoenauer, M., and Schwefel, H.-P.,
+  editors, {\em PPSN}, volume 1498 of {\em Lecture Notes in Computer Science},
+  pages 292--304. Springer.
+
+\bibitem[Zitzler and Thiele, 1999]{Zitzler99}
+Zitzler, E. and Thiele, L. (1999).
+\newblock {Multiobjective Evolutionary Algorithms: a Comparative Case Study and
+  the Strength Pareto Approach}.
+\newblock {\em IEEE Trans. Evolutionary Computation}, 3(4):257--271.
+
+\end{thebibliography}

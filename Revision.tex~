@@ -1,0 +1,58 @@
+\documentclass[12pt]{article}
+
+\usepackage{amssymb,amsmath,alltt}
+\usepackage{graphicx}
+\usepackage[latin1]{inputenc}
+\usepackage[spanish]{babel}
+\usepackage{fancyhdr, anysize}
+\usepackage{epsfig}
+
+\usepackage{algorithm}
+\usepackage{algorithmic}
+\usepackage{titlesec}
+
+\input{otros/spanishAlgorithmic} % mi archivo de traduccion
+\input{otros/configuraciones}
+
+\renewcommand{\sectionmark}[1]%
+{\markright{{\small \thesection\ #1}}}
+\lhead[\fancyplain{}{\bfseries \thepage}]%
+{\fancyplain{}{\bfseries \rightmark}}
+
+\rhead[\fancyplain{}{{\small \bfseries \leftmark}}]%
+{\fancyplain{}{\bfseries \thepage}}
+
+\sloppy
+
+\parskip=5pt
+\hoffset = 0pt
+\oddsidemargin = .5cm
+\evensidemargin = .5cm
+\textheight = 657pt
+\textwidth = 15.6cm
+\topmargin = -2 cm
+
+\begin{document}
+
+\pagestyle{fancy}
+%\renewcommand{\chaptermark}[1]{\markboth{\it\ #1}{}}
+%\renewcommand{\sectionmark}[1]{\markright{\chaptername \ \thechapter}{}}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+
+\newtheorem{definicion}{Definici\'on}%[chapter]
+\newtheorem{teorema}{Teorema}%[chapter]
+\newtheorem{corolario}[teorema]2{Corolario}
+\newtheorem{axioma}{Axioma}
+\newtheorem{proposicion}{\sc Proposici\'on}[section]
+
+% Cambiar la siguiente línea con el nombre del capítulo a compilar
+\title{\bf Cap\'{\i}tulo 1: Introducci\'on}
+
+\author{Iv\'an Chaman}
+
+\maketitle
+\input{Cap1/Cap1}
+\bibliographystyle{abbrv}
+\bibliography{biblio.bib}
+\end{document}

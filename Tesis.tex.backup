@@ -1,0 +1,110 @@
+\documentclass[openright,final,spanish,11pt,letterpaper]{book}
+%idioma
+\usepackage{babel}
+%tipo de codificacion
+\usepackage[latin1]{inputenc}
+%simbolos matematicos
+\usepackage{amssymb}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+%graficos
+\usepackage[final]{graphicx}
+%color de letras
+\usepackage{color}
+%algoritmos 
+\usepackage[chapter,rightnl,lined,vlined]{algorithm}
+\usepackage[noend]{algorithmic}
+\algsetup{linenosize=\small}
+\algsetup{indent=2em}
+
+%otros
+\usepackage{epstopdf}
+\usepackage{fancyhdr}
+\usepackage[colorlinks]{hyperref}
+%\usepackage{hyperref}
+\usepackage[centerlast,small]{caption2}
+\usepackage{wrapfig}
+\usepackage{subfigure}
+\usepackage{makeidx}
+\usepackage{titlesec}
+
+\usepackage{listings} %paquete para codigos fuente
+\usepackage{time}
+
+\hypersetup{colorlinks=true}
+
+%archivos de traduccion y configuraciones
+\input{otros/spanishAlgorithmic} % mi archivo de traduccion
+
+\input{otros/configuraciones}
+\voffset=-36pt
+\marginparsep=20pt
+\textwidth 6.0in
+\textheight 8.75in
+\oddsidemargin 0.4in
+\evensidemargin 0in
+
+\begin{document}
+
+\frontmatter
+\include{Portada/Portada}
+\include{Carta/Carta}
+%\include{otros/glosario}
+%\include{Resumen/Abstract}
+%\include{Agradecimientos/Agradecimientos}
+
+\tableofcontents
+
+\addcontentsline{toc}{chapter}{\'Indice de figuras}
+\listoffigures
+
+%\listofalgorithms
+%\addcontentsline{toc}{chapter}{\'Indice de algoritmos}
+%\newcommand{\listalgorithmsname}{\'Indice de algoritmos}
+%
+%\addcontentsline{toc}{chapter}{Índice de tablas}
+%\listoftables
+
+\mainmatter
+\pagestyle{fancy}
+\renewcommand{\chaptermark}[1]{\markboth{\it\ #1}{}}
+\renewcommand{\sectionmark}[1]{\markright{\chaptername \ \thechapter}{}}
+\fancyhead[LO,RE]{}
+\fancyhead[LE]{{\bfseries\thepage} \ \ \rightmark}
+\fancyhead[RO]{\leftmark \ \ {\bfseries\thepage}}
+\fancyfoot[LO,LE]{Cinvestav}
+\fancyfoot[CO,CE]{}
+\fancyfoot[RO,RE]{Departamento de Computación}
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\renewcommand{\tablename}{\textbf{Tabla}}
+\theoremstyle{definition}
+\newtheorem{definicion}{Definici\'on}[chapter]
+\newtheorem{teorema}{Teorema}[chapter]
+\newtheorem{corolario}[teorema]{Corolario}
+\newtheorem{axioma}{Axioma}
+\newtheorem{proposicion}{\sc Proposici\'on}[section]
+
+
+
+\include{Cap1/Cap1}
+\include{Cap2/Cap2}
+\include{Cap3/Cap3}
+\include{Cap4/Cap4}
+\include{Cap5/Cap5}
+
+\appendix
+\include{ApendiceA/ApA}
+%\include{ApendiceB/Tablas}
+%\include{ApendiceC/Codigos}
+
+ \backmatter
+
+\addcontentsline{toc}{chapter}{Bibliografía}
+%\bibliographystyle{unsrt}
+%\bibliographystyle{plain}
+\bibliographystyle{apalike}
+\bibliography{biblio.bib}
+
+\end{document}

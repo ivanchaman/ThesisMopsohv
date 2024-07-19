@@ -1,0 +1,150 @@
+\documentclass[spanish,12pt,letterpaper]{article}
+\usepackage{babel}
+\usepackage[latin1]{inputenc}
+\usepackage{graphicx}
+
+%% Page size and margins
+\setlength{\textheight}{22.0cm}
+\setlength{\textwidth}{16.0cm}
+\setlength{\columnsep}{0.8cm}
+\setlength{\topmargin}{1.0cm}
+\setlength{\headheight}{0cm}
+\setlength{\headsep}{0cm}
+\setlength{\parindent}{1pc}
+\setlength{\oddsidemargin}{3.0cm}
+\setlength{\evensidemargin}{3.0cm}
+\addtolength{\oddsidemargin}{-1in}
+\addtolength{\evensidemargin}{-1in}
+
+\title{Centro de Investigación y de Estudios Avanzados\\ del IPN\\
+	Departamento de Computación\\
+	Formato de Tesis}
+
+\begin{document}
+\maketitle
+
+\section{Introducción}
+
+La tesis es un documento indispensable para la obtención del
+grado. Darle importancia de una buena estructura nos resultará
+en una buena transmisión del pensamiento e investigación
+del estudiante, que es también el objetivo principal de su
+realización.
+Si se tiene un bien resumen de la tesis, se facilita su
+referencia y búsqueda por Internet.
+La lectura de un buen resumen también da pie al lector
+de animarle a continuarla leyendo.
+
+\section{Organización}
+
+ La estructura sugerida para la tesis es: 
+
+\rule{\linewidth}{1pt}
+\begin{description}
+	\item[i] Portada 
+	\item[ii] Resumen \newline
+		Es un buen ejercicio la elaboración de un resumen.
+		Aunque no hay una receta para todos los casos,
+		algunas preguntas que ayudan a pensan que se
+		describe aqui son:\newline
+		¿Cuál es tema que trata la tesis? ¿Qué es lo
+		novedoso del trabajo? ¿Que resultados se obtuvieron?
+		¿Cómo se exponen los resultados obtenidos?
+	\item[iii] Agradecimientos
+	\item[iv] Índice
+	\item[v] Lista de Figuras
+	\item[vi] Lista de Tablas
+	\item[1] Capítulo 1, Introducción \newline
+		Explicación  introductoria de que es el trabajo
+	que se ha realizado en grandes razgos, el porqué de ello,
+	y como está organizada la tesis.
+	\item[2] Capítulo de Teoría  \newline
+		Aqui se expone la teoría necesaria para poder
+	entender el trabajo realizado
+	\item[3] Capítulo 3, Descripción del trabajo realizado \newline 
+	\item[4] Capítulo 4, Resultados y Discusión
+	\item[5] Capítulo 5, Conclusiones y Trabajo a Futuro
+	\item Apéndice A \newline
+		Aqui se exponen listados de programas, imágenes de pantalla
+	de alguna aplicación, imágenes de resultados, manuales de usario,
+		etc., en uno o más apéndices.
+	\item  Bibliografía
+\end{description}
+\rule{\linewidth}{1pt}
+
+El número de capítulos puede depender del tipo trabajo
+de  trabajo desarrollado. Se recomienda apegarse lo
+más posible a  la extructura arriba presentada.
+
+Un {\em esqueleto} de la tesis se encuentra en el archivo
+Tesis.tex dentro del directorio donde está este documento.
+
+\section{Formato del Escrito}
+
+El formato que se seguirá es el que produce por defecto
+el estilo ``book'' de \LaTeX :
+
+\begin{description}
+	\item Antes del capítulo 1, las páginas van numeras en 
+		números romanos en minúsculas. La portada es la página
+		i, sin ponerlo explícitamente 
+		(esto se logra en \LaTeX con \verb|\frontmatter|).
+	\item A partir del capítulo 1 hasta la bibliografía, las
+		páginas se enumeran en arábigos.
+		(esto se logra en \LaTeX con \verb|\mainmatter|).
+	\item La numeración va en la parte superior derecha de cada
+		página
+	\item Cada capítulo comienza en una nueva página impar
+	(esto lo realiza automáticamente \LaTeX cuando se inicia
+	un \verb|\begin{chapter}|
+\end{description}
+
+ Los márgenes deben ser de 3 cm a la izquierda, y 2 cm a la
+derecha, arriba y abajo.
+
+El tipo de letra (font):
+\begin{description}
+	\item[\LaTeX] Times Roman (por defecto es la selecionada) 12 pt.
+	\item[Word] Times Roman 12 pt.
+\end{description}
+
+%% Espaciamiento entre líneas 
+%% Escabezado de las páginas
+%% Hola de aprobación de tesis
+
+El estilo de las referencias debe ser el recomendado por
+defecto el \LaTeX, por número en el texto y ordenadas
+en la bibliografía alfabéticamente o en el orden de
+aparición. Por ejemplo:
+
+``Radon \cite{Radon17} demostró matemáticamente
+el principio de una reconstrucción $n$-dimensional 
+a partir de sus proyecciones $n-1$ dimensionales.''
+El libro \cite{imhandbook}. El manual \cite{F77_SGI}.
+En procedings \cite{Zhu94}. E incluso referencias
+a artículos publicados en periódicos \cite{news_pais1}.
+Este es un ejemplo de referencias a tesis de maestría \cite{tesis2,variosApellidos}
+y a tesis de doctorado \cite{tesis1} 
+
+\bibliographystyle{unsrt}
+\bibliography{biblio}
+
+La portada debe ser de la siguiente forma (en la página
+siguiente), donde se debe
+cambiar el título, el nombre del asesor,
+el nombre del autor y la fecha (mes, año).
+
+En la parte final de tesis va la ``Carta de Aprobación
+de Tesis''.
+
+\newpage
+\include{portada}
+
+% \newpage
+% \include{portada_ejemplo}
+
+\newpage
+\include{carta}
+
+
+\end{document}
